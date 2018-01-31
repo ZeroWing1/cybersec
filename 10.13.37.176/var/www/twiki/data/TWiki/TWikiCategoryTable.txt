@@ -1,0 +1,2 @@
+%META:TOPICINFO{author="PeterThoeny" date="1000794719" format="1.0" version="1.7"}%
+__Note:__ This feature has been replaced by: TWikiForms

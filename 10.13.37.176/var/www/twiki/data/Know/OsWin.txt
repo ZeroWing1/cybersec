@@ -1,0 +1,6 @@
+*Operating System: <nop>Windows*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsWin">Search</A></B> all *_Windows_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%

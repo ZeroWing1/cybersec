@@ -1,0 +1,48 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.02.37.20;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.08.02.20.47.11;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042339040" format="1.0" version="1.2"}%
+Ryan Freebern is a TWikiContributor. 
+
+See home page at TWiki:Main/%TOPIC%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1028321231" format="1.0" version="1.1"}%
+d4 1
+a4 1
+See TWiki:%MAINWEB%/%TOPIC%
+@

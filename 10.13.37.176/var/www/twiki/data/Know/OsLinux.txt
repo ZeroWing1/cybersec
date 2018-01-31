@@ -1,0 +1,6 @@
+*Operating System: Linux*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsLinux">Search</A></B> all *_Linux_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%

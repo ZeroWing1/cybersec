@@ -1,0 +1,67 @@
+# bin/.htaccess.txt
+#
+# Controls access to TWiki scripts - rename this to '.htaccess' to make
+# Apache use it.
+
+# Use CGI & Perl to handle all files in 'bin' directory, i.e. run as scripts
+# - this should remove the need to rename files to end in '.pl' etc,
+# if your web hosting provider permits this.  Remove if using mod_perl.
+SetHandler cgi-script
+
+# Password file for TWiki users
+#
+# The path here must be a system file pathname, not a URL - first part should 
+# match the $dataDir setting in TWiki.cfg
+AuthUserFile /filepath/to/TWiki/data/.htpasswd
+AuthName 'Enter your WikiName: (First name and last name, no space, no dots, capitalized, e.g. JohnSmith). Cancel to register if you do not have one.'
+AuthType Basic
+
+# File to return on access control error (e.g. wrong password)
+# The path here must be a URL path, not a file pathname - first part should 
+# match the $scriptUrlPath in TWiki.cfg
+ErrorDocument 401 /urlpath/to/twiki/bin/oops/TWiki/TWikiRegistration?template=oopsauth
+
+<Files ~ "[^/]*\.html$">
+       SetHandler blabla
+       allow from all
+</Files>
+
+<Files "viewauth">
+       require valid-user
+</Files>
+
+<Files "edit">
+       require valid-user
+</Files>
+
+<Files "preview">
+       require valid-user
+</Files>
+
+<Files "save">
+       require valid-user
+</Files>
+
+<Files "attach">
+       require valid-user
+</Files>
+
+<Files "upload">
+       require valid-user
+</Files>
+
+<Files "rename">
+       require valid-user
+</Files>
+
+<Files "manage">
+       require valid-user
+</Files>
+
+<Files "installpasswd">
+       require valid-user
+</Files>
+
+<Files "*">
+       allow from all
+</Files>

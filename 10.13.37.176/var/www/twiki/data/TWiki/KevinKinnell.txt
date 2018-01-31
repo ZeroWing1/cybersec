@@ -1,0 +1,4 @@
+%META:TOPICINFO{author="PeterThoeny" date="1042338269" format="1.0" version="1.5"}%
+Kevin Kinnell is a TWikiContributor and used to be a TWiki:Codev/CoreTeam member.
+
+See home page at TWiki:Main/%TOPIC%

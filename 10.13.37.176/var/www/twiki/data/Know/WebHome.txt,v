@@ -1,0 +1,253 @@
+head	1.10;
+access;
+symbols;
+locks
+	nobody:1.10; strict;
+comment	@# @;
+
+
+1.10
+date	2002.04.14.06.20.43;	author PeterThoeny;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.04.07.10.21.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.11.24.11.37.30;	author PeterThoeny;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.07.17.07.18.12;	author PeterThoeny;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2000.11.11.06.26.15;	author PeterThoeny;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2000.09.09.21.06.49;	author PeterThoeny;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2000.08.19.01.11.05;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2000.02.26.10.00.19;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.02.04.21.46.27;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.05.54.55;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.10
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1018765243" format="1.0" version="1.10"}%
+Welcome to the home of <b>%WIKITOOLNAME%.%WEB%</b>. This is a web-based collaboration area used as a knowledge base to find useful information for ... (anything you'd like, this Web is for demonstration purposes only)
+
+---++ Starting Points of the %WEB% Web
+
+	* ReadmeFirst tells you how to use and contribute to the knowlege base.
+	* To *submit a new problem - solution pair* create a new topic like this: Type a new topic name into the edit field at the top of this page, press Enter, and then follow the [Create] link.
+	* WebSearch can be used to *search for a solution to a problem.*
+%INCLUDE{"%TWIKIWEB%.WebSiteTools"}%
+
+*Notes:*
+%INCLUDE{"%TWIKIWEB%.YouAreHere"}%
+
+%INCLUDE{"%TWIKIWEB%.SiteMap"}%
+@
+
+
+1.9
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018174860" format="1.0" version="1.9"}%
+d4 2
+a5 2
+*Starting points:*
+<form action="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/">
+d9 1
+a9 7
+	* <input type="text" name="search" size="32" /> <input type="submit" value="Search" /> &nbsp;&nbsp; (More options in WebSearch)
+	* WebChanges: Find out recent modifications to the %WIKITOOLNAME%.%WEB% web.
+	* WebIndex: Display all %WIKITOOLNAME%.%WEB% topics in alphabetical order. See also the faster WebTopicList 
+	* %NOTIFYTOPIC%: Subscribe to be automatically notified when something changes in the %WIKITOOLNAME%.%WEB% web.
+	* %STATISTICSTOPIC%: View access statistics of the %WIKITOOLNAME%.%WEB% web.
+	* %WEBPREFSTOPIC%: Preferences of the %WIKITOOLNAME%.%WEB% web.
+</form>
+d12 1
+a12 2
+	* You are currently in the %WIKITOOLNAME%.%WEB% web. The color code for this web is a light green background, so you know where you are.
+	* If you are not familiar with the %WIKITOOLNAME% collaboration tool, please visit %TWIKIWEB%.WelcomeGuest in the %WIKITOOLNAME%.%TWIKIWEB% web first.
+@
+
+
+1.8
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1006601850" format="1.0" version="1.8"}%
+d21 1
+a21 1
+%INCLUDE{"%TWIKIWEB%.TWikiWebsTable"}%
+@
+
+
+1.7
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="995354388" format="1.0beta2" version="1.7"}%
+d11 1
+a11 1
+	* WebIndex: Display all %WIKITOOLNAME%.%WEB% topics in alphabetical order.
+@
+
+
+1.6
+log
+@none
+@
+text
+@d1 1
+d5 1
+a5 1
+<FORM action="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/">
+d9 2
+a10 2
+	* <INPUT type="text" name="search" size="32"> <INPUT type="submit" value="Search"> &nbsp;&nbsp; (More options in WebSearch)
+	* WebChanges: Find out recent changes of the %WIKITOOLNAME%.%WEB% web.
+d15 1
+a15 1
+</FORM>
+@
+
+
+1.5
+log
+@none
+@
+text
+@d20 1
+a20 1
+%INCLUDE{"TWiki.TWikiWebsTable"}%
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+Welcome to the home of <b>TWiki.%WEB%</b>. This is a web-based collaboration area used as a knowledge base to find useful information for ... (anything you'd like, this Web is for demonstration purposes only)
+d18 1
+a18 1
+	* If you are not familiar with the %WIKITOOLNAME% collaboration tool, please visit %TWIKIWEB%.WelcomeGuest in %WIKITOOLNAME%.%TWIKIWEB% first.
+d20 1
+a20 1
+%INCLUDE{"Main.TWikiWebsTable"}%
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 1
+Welcome to the home of <b>TWiki.%WEB%</b>. This is a web based collaboration area used as a knowledge base to find useful information for ... (anything you'd like, this Web is for demonstration purposes only)
+d9 2
+a10 2
+	* <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=topic&regex=on&search=.*">Topic index</A>: List up all %WIKITOOLNAME%.%WEB% topics in alphabetical order.
+	* <A HREF="%SCRIPTURLPATH%/changes%SCRIPTSUFFIX%/%WEB%">Changes</A>: Find out recent changes of the %WIKITOOLNAME%.%WEB% web.
+d18 1
+a18 1
+	* If you are not familiar with the %WIKITOOLNAME% collaboration tool, please visit %MAINWEB%.WelcomeGuest in %WIKITOOLNAME%.%MAINWEB% first.
+d20 1
+a20 3
+----
+
+%INCLUDE{"Main/TWikiWebsTable.txt"}%
+@
+
+
+1.2
+log
+@none
+@
+text
+@d4 1
+d6 1
+a6 1
+	* To *submit a new problem - solution pair* create a new topic like this: Type a new topic name into the edit field at the top of this page, press Enter, and then the [Create] button.
+d8 7
+a14 5
+	* <FORM action="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/"> <INPUT type="text" name="search" size="32"> <INPUT type="submit" value="Search"> <INPUT type="hidden" name="scope" value="text"> &nbsp;&nbsp; (More options in WebSearch) </FORM>
+	* <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=topic&regex=on&search=.*">Topic index</A> lists up all TWiki.%WEB% topics in alphabetical order.
+	* <A HREF="%SCRIPTURLPATH%/changes%SCRIPTSUFFIX%/%WEB%">Changes</A>: Find recent changes of the TWiki.%WEB% web.
+	* WebNotify: Subscribe to be automatically notified when something changes in TWiki.%WEB%.
+	* WebStatistics: View access statistics of the TWiki.%WEB% web.
+d17 2
+a18 2
+	* You are currently in the TWiki.%WEB% web. The color code for this web is a light green background, so you know where you are.
+	* If you are not familiar with the TWiki collaboration tool, please visit Main.WelcomeGuest in TWiki.Main first.
+d22 1
+a22 1
+%INCLUDE{"wikiwebtable.inc"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d7 3
+a9 3
+	* <FORM name="main" action="../../search/%WEB%/"> <INPUT type="text" name="search" size="32"> <INPUT type="submit" value="Search"> <INPUT type="hidden" name="scope" value="text"> <INPUT type="hidden" name="ignorecase" value="on"> &nbsp;&nbsp; (More options in WebSearch) </FORM>
+	* <A HREF="../../search/%WEB%/?scope=topic&regex=on&search=.*">Topic index</A> lists up all TWiki.%WEB% topics in alphabetical order.
+	* <A HREF="../../changes/%WEB%">Changes</A>: Find recent changes of the TWiki.%WEB% web.
+d11 1
+d19 1
+a19 1
+%INCLUDE:"wikiwebtable.inc"%
+@

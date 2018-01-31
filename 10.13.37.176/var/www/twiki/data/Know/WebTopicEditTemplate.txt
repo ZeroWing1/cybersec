@@ -1,0 +1,14 @@
+%META:TOPICINFO{author="PeterThoeny" date="1005190464" format="1.0" version="1.5"}%
+---++ Problem
+
+.
+
+---++ Solution
+
+.
+
+-- %WIKIUSERNAME% - %DATE%
+%META:FORM{name="WebForm"}%
+%META:FIELD{name="TopicClassification" title="TopicClassification" value="NoDisclosure"}%
+%META:FIELD{name="OperatingSystem" title="OperatingSystem" value=""}%
+%META:FIELD{name="OsVersion" title="OsVersion" value=""}%

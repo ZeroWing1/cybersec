@@ -1,0 +1,27 @@
+head	1.1;
+access;
+symbols;
+locks
+	nobody:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2003.02.01.10.03.58;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.1
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1044093838" format="1.0" version="1.1"}%
+%INCLUDE{"WikiSyntax"}%
+@

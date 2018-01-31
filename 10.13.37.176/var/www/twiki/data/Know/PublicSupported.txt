@@ -1,0 +1,6 @@
+*Classification: Public Supported*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%54opicClassification.%2APublicSupported">Search</A></B> all *_Public Supported_* topics.
+	* Is one of the TopicClassifications.
+
+%INCLUDE{"TopicClassification"}%

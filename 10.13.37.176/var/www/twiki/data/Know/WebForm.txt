@@ -1,0 +1,9 @@
+%META:TOPICINFO{author="PeterThoeny" date="1000795176" format="1.0" version="1.3"}%
+---+ Form Definition for the %WEB% web
+
+| *Name:*| *Type:* | *Size:* | *Values:* | *Tooltip message:* |
+| TopicClassification | select | 1 | Select one..., NoDisclosure, PublicSupported, PublicFAQ | Classify a topic |
+| OperatingSystem | checkbox+buttons | 3 | OsHPUX, OsLinux, OsMacOS, OsSolaris, OsSunOS, OsWin | Select the OS |
+| OsVersion | text | 16 | | OS version |
+
+Related Topic: WebPreferences, WebTopicEditTemplate, %TWIKIWEB%.TWikiForms

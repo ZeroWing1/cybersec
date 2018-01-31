@@ -1,0 +1,325 @@
+head	1.12;
+access;
+symbols;
+locks
+	nobody:1.12; strict;
+comment	@# @;
+
+
+1.12
+date	2003.01.25.07.09.29;	author PeterThoeny;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.01.23.08.28.33;	author PeterThoeny;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.01.22.01.53.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.01.18.07.21.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.10.31.03.29.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.10.12.03.38.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.06.28.06.58.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.05.16.07.00.00;	author MikeMannix;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.04.14.07.29.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.12.28.03.05.00;	author MikeMannix;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.12.03.06.15.02;	author MikeMannix;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.28.00.40.26;	author MikeMannix;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.12
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1043478569" format="1.0" version="1.12"}%
+---+ TWiki Documentation Graphics
+
+This is one way to create a library of common icons, accessible through user-defined TWikiVariables set in WebPreferences, or in TWikiPreferences for site-wide use. 
+
+There are other approaches as well: the TWiki:Plugins/TopicVarsPlugin lets you set variables in any topic, not just in WebPreferences, for use in the same. The TWiki:Plugins/SmiliesPlugin, using a different short hand than =<nop>%VARIABLES%=, may be worth checking out for extended use.
+
+In this example, <nop>%TOPIC% - this topic - acts as the icon library. Graphics are uploaded and displayed. Then, the paths are set in [[TWiki.TWikiPreferences#DocGraphics]] for site-wide access. You can also create individual library pages in each web. And you don't have to restrict yourself to graphics: Preferences Variables can include text and links to any type of file.
+
+	* <img src="%ATTACHURLPATH%/help.gif" alt="help.gif"  width="16" height="16"  /> Help 
+	* <img src="%ATTACHURLPATH%/tip.gif" alt="tip.gif"  width="16" height="16"  /> Tip / Idea
+	* <img src="%ATTACHURLPATH%/warning.gif" alt="warning.gif"  width="16" height="16" /> Warning / Important
+	* <img src="%ATTACHURLPATH%/pencil.gif" alt="pencil.gif"  width="16" height="16"  /> Refactor / Edit
+	* <img src="%ATTACHURLPATH%/choice-yes.gif" alt="choice-yes.gif"  width="16" height="16"  /> Done
+	* <img src="%ATTACHURLPATH%/updated.gif" alt="updated.gif"  width="56" height="8"  /> Updated
+	* <img src="%ATTACHURLPATH%/new.gif" alt="new.gif"  width="28" height="8"  /> New
+	* <img src="%ATTACHURLPATH%/starred.gif" alt="starred.gif"  width="16" height="16"  /> Highlight (positive)
+	* <img src="%ATTACHURLPATH%/arrowright.gif" alt="arrowright.gif"  width="16" height="16"  /> Moved to...
+	* <img src="%ATTACHURLPATH%/viewtopic.gif" alt="viewtopic.gif"  width="16" height="16"  /> View topic
+	* <img src="%ATTACHURLPATH%/edittopic.gif" alt="edittopic.gif"  width="16" height="16"  /> Edit topic
+	* <img src="%ATTACHURLPATH%/newtopic.gif" alt="newtopic.gif"  width="16" height="16"  /> New topic
+	* <img src="%ATTACHURLPATH%/searchtopic.gif" alt="searchtopic.gif"  width="16" height="16"  /> Search topic
+	* <img src="%ATTACHURLPATH%/printtopic.gif" alt="printtopic.gif"  width="16" height="16"  /> Print topic
+	* <img src="%ATTACHURLPATH%/attachfile.gif" alt="attachfile.gif"  width="16" height="16"  /> Attach file
+
+-- Main.PeterThoeny - 17 Jan 2003<br />
+-- Main.MikeMannix - 16 May 2002
+
+%META:FILEATTACHMENT{name="help.gif" attr="" comment="Help" date="1001637645" path="C:\02_TWikiDocs\help.gif" size="130" user="MikeMannix" version="1.1"}%
+%META:FILEATTACHMENT{name="tip.gif" attr="" comment="Tip" date="1007360101" path="C:\02_TWikiDocs\tip.gif" size="123" user="MikeMannix" version="1.2"}%
+%META:FILEATTACHMENT{name="warning.gif" attr="" comment="Warning" date="1001637707" path="C:\02_TWikiDocs\warning.gif" size="138" user="MikeMannix" version="1.1"}%
+%META:FILEATTACHMENT{name="pencil.gif" attr="" comment="Pencil" date="1018768623" path="C:\DATA\pencil.gif" size="172" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="choice-yes.gif" attr="" comment="Green checkmark - DONE" date="1021532287" path="C:\02_TWikiDocs\choice-yes.gif" size="82" user="MikeMannix" version="1.2"}%
+%META:FILEATTACHMENT{name="updated.gif" attr="" comment="Updated" date="1018768662" path="C:\DATA\updated.gif" size="317" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="new.gif" attr="" comment="New" date="1018768672" path="C:\DATA\new.gif" size="167" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="starred.gif" attr="" comment="Star" date="1018768688" path="C:\DATA\starred.gif" size="128" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="arrowright.gif" attr="" comment="Red arrow to right" date="1018768726" path="C:\DATA\arrowright.gif" size="81" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="viewtopic.gif" attr="" comment="View topic" date="1036034850" path="C:\Data\Temp\viewtopic.gif" size="904" user="PeterThoeny" version="1.2"}%
+%META:FILEATTACHMENT{name="edittopic.gif" attr="" comment="Edit topic" date="1036034837" path="C:\Data\Temp\edittopic.gif" size="931" user="PeterThoeny" version="1.2"}%
+%META:FILEATTACHMENT{name="newtopic.gif" attr="" comment="New topic" date="1043200306" path="C:\Data\Temp\newtopic.gif" size="158" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="searchtopic.gif" attr="" comment="Search topic" date="1042874143" path="C:\Data\Temp\searchtopic.gif" size="192" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="printtopic.gif" attr="" comment="Print topic" date="1042874157" path="C:\Data\Temp\printtopic.gif" size="147" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="attachfile.gif" attr="" comment="Attach file" date="1042874171" path="C:\Data\Temp\attachfile.gif" size="193" user="PeterThoeny" version="1.1"}%
+@
+
+
+1.11
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1043310513" format="1.0" version="1.11"}%
+d8 1
+a8 1
+In this example, %TOPIC% - this topic - acts as the icon library. Graphics are uploaded and displayed. Then, the paths are set in TWikiPreferences for site-wide access. You can also create individual library pages in each web. And you don't have to restrict yourself to graphics: Preferences Variables can include text and links to any type of file.
+@
+
+
+1.10
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1043200380" format="1.0" version="1.10"}%
+d6 1
+a6 1
+There are other approaches as well: the TWiki:Plugins/TopicVarsPlugin lets you set variables in any topic, not just in WebPreferences, for use in the same. The TWiki:Plugins/SmiliesPlugin, using a different short hand then =<nop>%VARIABLES%=. may be worth checking out for extended use.
+d8 1
+a8 1
+In this example, %TOPIC% - this topic - acts as the icon library. Graphics are uploaded and displayed. Then, the paths are set in TWikiPreferences for site-wide access. You can also create individual library pages in each web. And you don't have to restrict yourself to graphics: Prefernces Variables can include text and links to any type of file.
+@
+
+
+1.9
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1042874460" format="1.0" version="1.9"}%
+d21 1
+d40 1
+@
+
+
+1.8
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1036034940" format="1.0" version="1.8"}%
+d21 3
+d25 1
+a25 1
+-- Main.PeterThoeny - 14 Apr 2002<br />
+d27 1
+d39 3
+@
+
+
+1.7
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1034393880" format="1.0" version="1.7"}%
+d33 2
+a34 2
+%META:FILEATTACHMENT{name="viewtopic.gif" attr="" comment="View topic" date="1034393656" path="C:\Data\Temp\viewtopic.gif" size="926" user="PeterThoeny" version="1.1"}%
+%META:FILEATTACHMENT{name="edittopic.gif" attr="" comment="Edit topic" date="1034393668" path="C:\Data\Temp\edittopic.gif" size="946" user="PeterThoeny" version="1.1"}%
+@
+
+
+1.6
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1025247480" format="1.0" version="1.6"}%
+d19 2
+a20 1
+
+d33 2
+@
+
+
+1.5
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1021532400" format="1.0" version="1.5"}%
+a9 1
+	* <img src="%ATTACHURLPATH%/8831.gif" alt="8831.gif"  width="88" height="31"  /> Temporary: standard 88x31px logo ID button
+a25 1
+%META:FILEATTACHMENT{name="8831.gif" attr="" comment="" date="1001637724" path="C:\02_TWikiDocs\8831.gif" size="3501" user="MikeMannix" version="1.1"}%
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018769340" format="1.0" version="1.4"}%
+d4 1
+a4 1
+This is one way to create a library of common icons, accessible through user-defined TWikiVariables. There are other approaches, including custom-configuring the TWiki:Plugins/SmiliesPlugin.
+d6 3
+a8 1
+Here, this topic - %TOPIC% - acts as the icon library. Graphics are uploaded and displayed. Then, the paths are set in TWikiPreferences for site-wide access. You can also create separate library pages in each web.
+d11 5
+a15 5
+	* <img src="%ATTACHURLPATH%/help.gif" alt="help.gif"  width="16" height="16"  /> Help / question
+	* <img src="%ATTACHURLPATH%/tip.gif" alt="tip.gif"  width="16" height="16"  /> Tip / idea
+	* <img src="%ATTACHURLPATH%/warning.gif" alt="warning.gif"  width="16" height="16" /> Warning
+	* <img src="%ATTACHURLPATH%/pencil.gif" alt="pencil.gif"  width="16" height="16"  /> Pencil
+	* <img src="%ATTACHURLPATH%/choice-yes.gif" alt="choice-yes.gif"  width="16" height="16"  /> Choice-Yes
+d18 3
+a20 2
+	* <img src="%ATTACHURLPATH%/starred.gif" alt="starred.gif"  width="16" height="16"  /> Star
+	* <img src="%ATTACHURLPATH%/arrowright.gif" alt="arrowright.gif"  width="16" height="16"  /> Red arrow to right
+d22 2
+a23 2
+-- Main.MikeMannix - 27 Dec 2001 <br />
+-- Main.PeterThoeny - 14 Apr 2002
+d29 1
+a29 1
+%META:FILEATTACHMENT{name="choice-yes.gif" attr="" comment="Choice-Yes" date="1018768648" path="C:\DATA\choice-yes.gif" size="877" user="PeterThoeny" version="1.1"}%
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1009508700" format="1.0" version="1.3"}%
+d3 1
+d6 1
+a6 10
+Here, this topic - %TOPIC% - acts as the icon library. Graphics are uploaded and displayed. Then, the paths are set in TWikiPreferences for site-wide access, or, as in this case, in WebPreferences for individual web use. You can also create separate library pages in each web.
+
+<blockquote>
+<img src="%ATTACHURLPATH%/8831.gif" alt="8831.gif"  width="88" height="31"  /> &#150; Temporary: standard 88x31px logo ID button:
+</blockquote>
+	* Help: <br /> <img src="%ATTACHURLPATH%/help.gif" alt="help.gif"  width="16" height="16"  />
+
+	* Tip: <br /> <img src="%ATTACHURLPATH%/tip.gif" alt="tip.gif"  width="16" height="16"  />
+
+	* Warning: <br /> <img src="%ATTACHURLPATH%/warning.gif" alt="warning.gif"  width="16" height="16"  />
+d8 10
+a17 1
+<img src="%ATTACHURLPATH%/warning.gif" alt="warning.gif"  width="16" height="16"  /><img src="%ATTACHURLPATH%/tip.gif" alt="tip.gif"  width="16" height="16"  /><img src="%ATTACHURLPATH%/help.gif" alt="help.gif"  width="16" height="16"  />
+d19 2
+a20 1
+-- Main.MikeMannix - 27 Dec 2001	
+d25 6
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1007360102" format="1.0" version="1.2"}%
+d3 4
+d16 3
+a18 2
+<img src="%ATTACHURLPATH%/warning.gif" alt="warning.gif"  width="16" height="16"  /><img src="%ATTACHURLPATH%/tip.gif" alt="tip.gif"  width="16" height="16"  /><img src="%ATTACHURLPATH%/help.gif" alt="help.gif"  width="16" height="16"  />
+
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1001637725" format="1.0" version="1.1"}%
+d15 1
+a15 1
+%META:FILEATTACHMENT{name="tip.gif" attr="" comment="Tip" date="1001637690" path="C:\02_TWikiDocs\tip.gif" size="150" user="MikeMannix" version="1.1"}%
+@

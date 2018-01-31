@@ -1,0 +1,26 @@
+head	1.1;
+access;
+symbols;
+locks
+	nobody:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	99.06.13.05.46.01;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.1
+log
+@none
+@
+text
+@See OsSunOS
+@

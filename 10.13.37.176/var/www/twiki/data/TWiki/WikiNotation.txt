@@ -1,0 +1,1 @@
+Wiki links topics automatically when you use the WikiWord notation.

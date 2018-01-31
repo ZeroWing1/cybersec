@@ -1,0 +1,50 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2000.08.19.01.18.45;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.05.45.14;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@*Classification: Public Supported*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%54opicClassification.%2APublicSupported">Search</A></B> all *_Public Supported_* topics.
+	* Is one of the TopicClassifications.
+
+%INCLUDE{"TopicClassification"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d4 1
+a4 1
+	* Is one of the TopicClassification.
+d6 1
+a6 1
+%INCLUDE{"TopicClassification.txt"}%
+@

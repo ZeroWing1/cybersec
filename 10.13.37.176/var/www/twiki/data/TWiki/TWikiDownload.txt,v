@@ -1,0 +1,59 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.09.01.01.32.55;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.11.27.08.51.41;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="999307975" format="1.0" version="1.2"}%
+---++ FAQ:
+
+I would like to install TWiki on my server. Can I get the source?
+
+---++ Answer:
+
+TWiki is distributed under the GnuGeneralPublicLicense. You can request the source from http://TWiki.org/download.html.
+
+__Back to:__ TWikiFAQ
+
+-- Main.PeterThoeny - 27 Nov 2000 <br>
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 1
+*FAQ:*
+d6 1
+a6 1
+*Answer:*
+d10 1
+a10 1
+See other TWikiFAQs.
+@

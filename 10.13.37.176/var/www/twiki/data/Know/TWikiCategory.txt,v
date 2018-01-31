@@ -1,0 +1,102 @@
+head	1.3;
+access;
+symbols;
+locks
+	nobody:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2000.11.11.06.23.55;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.08.21.00.18.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.05.46.48;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@none
+@
+text
+@*Category of a %WIKITOOLNAME%.%WEB% topic*
+
+The bottom part of a %WIKITOOLNAME%.%WEB% topic has a category table. It is used to categorize a topic:
+	* UseCategory: Tell if the category table should be used or not
+	* TopicClassification: Classify a topic as public or confidential
+	* OperatingSystem: OS used
+	* OsVersion: OS version
+
+When creating a topic it is important to set the appropriate values. This ensures that it is possible to do all kinds of query and search in WebSearch.
+
+An explanation of the table items follows.
+
+-----
+%INCLUDE{"UseCategory"}%
+
+-----
+%INCLUDE{"TopicClassification"}%
+
+-----
+%INCLUDE{"OperatingSystem"}%
+
+-----
+%INCLUDE{"OsVersion"}%
+
+-----
+
+-- %MAINWEB%.PeterThoeny - 20 Aug 2000 <br>
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+*Category of a TWiki.Know topic*
+d3 1
+a3 1
+The bottom part of a TWiki.Know topic has a category table. It is used to categorize a topic:
+d27 1
+a27 1
+-- Main.PeterThoeny - 20 Aug 2000 <br>
+@
+
+
+1.1
+log
+@none
+@
+text
+@d14 1
+a14 1
+%INCLUDE{"UseCategory.txt"}%
+d17 1
+a17 1
+%INCLUDE{"TopicClassification.txt"}%
+d20 1
+a20 1
+%INCLUDE{"OperatingSystem.txt"}%
+d23 1
+a23 1
+%INCLUDE{"OsVersion.txt"}%
+d27 1
+a27 1
+-- Main.PeterThoeny - 11 Feb 1999 <br>
+@

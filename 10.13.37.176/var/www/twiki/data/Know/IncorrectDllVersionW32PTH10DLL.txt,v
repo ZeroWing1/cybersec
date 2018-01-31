@@ -1,0 +1,161 @@
+head	1.4;
+access;
+symbols;
+locks
+	nobody:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2001.09.04.07.12.14;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.06.08.01.09.50;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.03.12.08.41.07;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.05.36.41;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.4
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="999587534" format="1.0" version="1.4"}%
+---++ Problem
+
+When I start the application Xyz it shows error message =Incorrect DLL version W32PTH10.DLL= .
+
+---++ Solution
+
+Download the attached file =W32PTH10.DLL= and replace the one in the =C:\xvz\bin= directory.
+
+-- %MAINWEB%.PeterThoeny - 12 Mar 2000 <br>
+%META:FORM{name="WebForm"}%
+%META:FIELD{name="TopicClassification" title="TopicClassification" value="PublicFAQ"}%
+%META:FIELD{name="OperatingSystem" title="OperatingSystem" value="OsWin"}%
+%META:FIELD{name="OsVersion" title="OsVersion" value="95/98"}%
+%META:FILEATTACHMENT{name="W32PTH10.DLL" attr="" comment="Version 1.6.9" date="952850460" path="C:\DATA\W32PTH10.DLL" size="64" user="thoeny" version=""}%
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+d11 5
+a15 53
+<!--TWikiCat--> <h4> TWikiCategory </h4>
+<table border="2" cellspacing="1" cellpadding="1">
+<tr>
+<td valign="top" align="right"> TopicClassification:  <br></td><td>  PublicFAQ </td>
+</tr><tr>
+<td valign="top" align="right"> OperatingSystem:  <br></td><td>  OsWin </td>
+</tr><tr>
+<td valign="top" align="right"> OsVersion:  <br></td><td>  <!---->95/98<!---->&nbsp; </td>
+</tr>
+</table><!--TWikiCat--><!--TWikiAttachment--><p>
+<table cellpadding="0" border="0" cellspacing="4">
+<tr bgcolor="#99CCCC">
+  <th>
+%TWIKIWEB%.FileAttachment:
+  </th><th>
+Action:
+  </th><th>
+Size:
+  </th><th>
+Date:
+  </th><th>
+Who:
+  </th><th>
+Comment:
+  </th>
+</tr><TwkNextItem>
+<tr>
+  <td valign="top">
+<TwkFileIcon><IMG src="%PUBURLPATH%/icn/dll.gif" width="16" hight="16" align="top"></TwkFileIcon>&nbsp;<a href="%PUBURLPATH%/%WEB%/%TOPIC%/W32PTH10.DLL"><TwkFileName>W32PTH10.DLL</TwkFileName></a>
+<TwkFilePath> <TwkData value="C:\DATA\W32PTH10.DLL"> </TwkFilePath>
+  </td><td valign="top">
+<TwkAction><a href="%SCRIPTURLPATH%/viewfile%SCRIPTSUFFIX%/%WEB%/%TOPIC%?filename=W32PTH10.DLL">view</a>&nbsp;<a href="%SCRIPTURLPATH%/attach%SCRIPTSUFFIX%/%WEB%/%TOPIC%?filename=W32PTH10.DLL">update</a></TwkAction>
+  </td><td valign="top" align="right">
+<TwkFileSize>64</TwkFileSize>
+  </td><td valign="top">
+<TwkFileDate>12&nbsp;Mar&nbsp;2000&nbsp;-&nbsp;08:41</TwkFileDate>
+  </td><td valign="top">
+<TwkFileUser> Main.PeterThoeny</TwkFileUser>
+  </td><td valign="top">
+<TwkFileComment>Version 1.6.9</TwkFileComment>
+  </td>
+</tr><TwkNextItem>
+<tr>
+  <td valign="top">
+  </td><td valign="top">
+<TwkAction><a href="%SCRIPTURLPATH%/attach%SCRIPTSUFFIX%/%WEB%/%TOPIC%">add</a><TwkAction>
+  </td><td valign="top" align="right">
+  </td><td valign="top">
+  </td><td valign="top">
+  </td><td valign="top">
+  </td>
+</tr>
+</table><!--TWikiAttachment-->
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+*Problem*
+d5 1
+a5 1
+*Solution*
+d62 1
+a62 1
+</table><!--TWikiAttachment-->@
+
+
+1.1
+log
+@none
+@
+text
+@d3 1
+a3 1
+Starting Xyz application shows error message =Incorrect DLL version W32PTH10.DLL= .
+d7 1
+a7 1
+Download latest DLL from =ftp.myserver.com= , directory =/pub/xyz/paches= , file =W32PTH10.DLL= and replace the one in =C:\xvz\bin= .
+d9 54
+a62 11
+-- Main.PeterThoeny - 13 Jun 1999 <br>
+<!--TWikiCat--> <h4> TWikiCategory </h4>
+<table border="2" cellspacing="1" cellpadding="1">
+<tr>
+<td valign="top" align="right"> TopicClassification:  <br></td><td>  PublicFAQ </td>
+</tr><tr>
+<td valign="top" align="right"> OperatingSystem:  <br></td><td>  OsWin </td>
+</tr><tr>
+<td valign="top" align="right"> OsVersion:  <br></td><td>  <!----><!---->&nbsp; </td>
+</tr>
+</table><!--TWikiCat-->@

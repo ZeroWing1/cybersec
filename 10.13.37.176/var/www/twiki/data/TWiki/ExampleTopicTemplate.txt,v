@@ -1,0 +1,45 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.09.12.06.34.59;	author MikeMannix;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.06.08.00.51.39;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="MikeMannix" date="1000276499" format="1.0" version="1.2"}%
+(just an example illustrating how to create a new topic based on a specific template topic. TWikiTemplatesVer1 has more)
+
+-- %WIKIUSERNAME% - %DATE% <br>
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 1
+(just an example illustrating how to create a new topic based on a specific template topic. TWikiTemplates has more)
+@

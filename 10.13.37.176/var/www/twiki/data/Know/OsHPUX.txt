@@ -1,0 +1,6 @@
+*Operating System: <nop>HP-UX*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsHPUX">Search</A></B> all *_HP-UX_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%

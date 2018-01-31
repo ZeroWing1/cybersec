@@ -1,0 +1,75 @@
+head	1.3;
+access;
+symbols;
+locks
+	nobody:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2001.09.18.06.39.36;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.04.07.18.43;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.17.17.18.51;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1000795176" format="1.0" version="1.3"}%
+---+ Form Definition for the %WEB% web
+
+| *Name:*| *Type:* | *Size:* | *Values:* | *Tooltip message:* |
+| TopicClassification | select | 1 | Select one..., NoDisclosure, PublicSupported, PublicFAQ | Classify a topic |
+| OperatingSystem | checkbox+buttons | 3 | OsHPUX, OsLinux, OsMacOS, OsSolaris, OsSunOS, OsWin | Select the OS |
+| OsVersion | text | 16 | | OS version |
+
+Related Topic: WebPreferences, WebTopicEditTemplate, %TWIKIWEB%.TWikiForms
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="999588009" format="1.0" version="1.2"}%
+d9 1
+a9 1
+Related Topic: WebPreferences, WebTopicEditTemplate, %TWIKIWEB%.TWikiFormTemplate
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="998068731" format="1.0" version="1.1"}%
+d6 1
+a6 1
+| OperatingSystem | checkbox+buttons | 3 | OsHPUX, OsLinux, OsSolaris, OsSunOS, OsWin | Select the OS |
+d9 1
+a9 1
+Related Topic: WebPreferences, WebTopicEditTemplate
+@

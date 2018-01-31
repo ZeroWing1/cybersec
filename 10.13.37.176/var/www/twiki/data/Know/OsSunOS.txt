@@ -1,0 +1,6 @@
+*Operating System: <nop>SunOS*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsSunOS">Search</A></B> all *_SunOS_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%

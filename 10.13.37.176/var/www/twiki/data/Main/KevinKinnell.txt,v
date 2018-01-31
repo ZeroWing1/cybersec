@@ -1,0 +1,62 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.00.28.35;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.05.23.02.10.03;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042331315" format="1.0" version="1.2"}%
+Kevin used to be a TWiki:Codev/CoreTeam member. See home page at TWiki:Main/KevinKinnell
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 20
+	* Name: Kevin Kinnell
+	* Email: kejoki@@netdoor.com
+	* Company Name: 
+	* Company URL: 
+	* Country: USA
+	* Comment: Kevin is a %TWIKIWEB%.TWikiContributor and a core team member.
+
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Horizontal size of text edit box:
+		* Set EDITBOXWIDTH = 70
+	* Vertical size of text edit box:
+		* Set EDITBOXHEIGHT = 17
+	* Default state of the __link__ check box in the attach file page:
+		* Set ATTACHLINKBOX = 
+
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* %WIKIUSERSTOPIC% has a list of other %WIKITOOLNAME% users.
+@

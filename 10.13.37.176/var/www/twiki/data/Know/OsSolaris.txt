@@ -1,0 +1,6 @@
+*Operating System: Solaris*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsSolaris">Search</A></B> all *_Solaris_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%

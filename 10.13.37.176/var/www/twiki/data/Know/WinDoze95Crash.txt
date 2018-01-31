@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="PeterThoeny" date="999587282" format="1.0" version="1.2"}%
+---++ Problem
+
+I got a call from Bill offering me $500 for each Windows crash reported to Micro$oft. 
+
+---++ Solution
+
+Use Linux.
+
+-- %MAINWEB%.TWikiGuest - 10 Feb 1999 <br>
+
+%META:FORM{name="WebForm"}%
+%META:FIELD{name="TopicClassification" title="TopicClassification" value="PublicFAQ"}%
+%META:FIELD{name="OperatingSystem" title="OperatingSystem" value="OsWin"}%
+%META:FIELD{name="OsVersion" title="OsVersion" value="95"}%

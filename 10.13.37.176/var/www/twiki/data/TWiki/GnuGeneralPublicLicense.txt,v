@@ -1,0 +1,65 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.09.01.00.20.32;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.11.27.08.57.56;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="999303632" format="1.0" version="1.2"}%
+---++ FAQ:
+
+TWiki has a GPL (GNU General Public License). What is GPL?
+
+---++ Answer:
+
+TWiki is distributed under the GNU General Public License, see TWikiDownload. GPL is one of the free software licenses that protects the copyright holder, and at the same time allows users to redistribute the software under the terms of the license. Extract:
+
+	* This program is open source software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+	* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	* See the GNU General Public License for more details, published at http://www.gnu.ai.mit.edu/copyleft/gpl.html
+
+Please note that TWiki is not distributed under the LGPL (Lesser General Public Licence), which implies TWiki can only be used with software that is licensed under conditions compliant with the GPL. Embedding in proprietary software requires an alternative license. Contact the author for details.
+
+__Back to:__ TWikiFAQ
+
+-- Main.PeterThoeny - 27 Nov 2000 <br>
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 1
+*FAQ:*
+d6 1
+a6 1
+*Answer:*
+d16 1
+a16 1
+See other TWikiFAQs.
+@

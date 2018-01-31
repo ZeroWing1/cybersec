@@ -1,0 +1,1595 @@
+head	1.31;
+access;
+symbols;
+locks
+	nobody:1.31; strict;
+comment	@# @;
+
+
+1.31
+date	2002.12.17.08.46.10;	author PeterThoeny;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2002.05.05.21.16.51;	author MikeMannix;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.04.07.09.38.45;	author PeterThoeny;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.03.16.10.00.05;	author PeterThoeny;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2001.12.05.19.59.35;	author PeterThoeny;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2001.12.04.10.33.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2001.12.04.08.14.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2001.10.03.01.18.03;	author PeterThoeny;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2001.09.18.07.17.18;	author PeterThoeny;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2001.09.18.05.36.12;	author MikeMannix;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2001.09.18.03.44.10;	author MikeMannix;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.09.15.19.29.20;	author PeterThoeny;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.09.15.09.15.31;	author MikeMannix;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.09.14.07.53.04;	author PeterThoeny;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.09.12.18.25.47;	author PeterThoeny;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.09.12.06.49.41;	author MikeMannix;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.09.09.00.08.52;	author MikeMannix;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.09.08.23.03.53;	author MikeMannix;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.09.08.00.24.06;	author MikeMannix;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.09.07.10.04.19;	author MikeMannix;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.06.09.36.50;	author MikeMannix;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.09.06.05.42.13;	author MikeMannix;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.09.03.08.57.20;	author MikeMannix;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.09.01.07.20.29;	author MikeMannix;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.01.04.47.30;	author MikeMannix;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.31.22.46.08;	author MikeMannix;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.30.16.50.33;	author MikeMannix;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.30.10.21.53;	author MikeMannix;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.28.21.00.38;	author MikeMannix;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.27.02.07.34;	author MikeMannix;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.25.08.38.31;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.31
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1040114770" format="1.0" version="1.31"}%
+%TOC%
+%STARTINCLUDE%
+---# TWiki Upgrade Guide
+
+_Upgrade from TWiki 01-Dec-2000 or TWiki 01-Sep-2001 to TWiki 01-Dec-2001 (previous to new full release)_
+
+This guide describes how to upgrade either from TWiki 01-Dec-2000 or TWiki 01-Sep-2001 to TWiki 01-Dec-2001.
+
+	* The latest version of TWiki (01-Dec-2001) is a small incremental release over the 01-Sep-2001 version.
+	* The 01-Sep-2001 version involves several major new features and numerous enhancements to the last full version (01-Dec-2000). The file system set-up is almost identical, but much of the underlying data structure and processes is new. With all the changes, the upgrade procedure is straightforward, and your existing page data is imported directly. 
+
+---++ Upgrade Requirements
+
+	* To upgrade from a 01-Dec-2000 or 01-Sep-2001 standard installation to the latest 01-Dec-2001 TWiki Production Release, follow the instructions below.
+
+	* __NOTE:__ To upgrade from a *pre-01-Dec-2000* TWiki, start with	%TWIKIWEB%.TWikiUpgradeTo01Dec2000.
+
+	* To upgrade from a Beta of the new release, or if you made custom modifications to the application, read through all new reference documentation, then use the procedure below as a guideline.  
+
+---++ Major Changes from TWiki 01-Sep-2001
+
+The latest 01-Dec-2001 release includes the following new features and enhancements compared to the 01-Sep-2001 release:
+
+	* *[[%TWIKIWEB%.FormattedSearch][FormattedSearch]]* - New =format=""= parameter in =%<nop>SEARCH{}%= variable for database like reporting. 
+	* Various bug fixes
+
+---++ Major Changes from TWiki 01-Dec-2000
+
+The 01-Sep-2001 release includes the following new features and enhancements compared to the 01-Dec-2000 release:
+
+	* *[[%TWIKIWEB%.TWikiPlugins][TWikiPlugins]]* - Easily install program enhancements using external plug-in modules. Developers can create plug-ins in Perl, with the [[%TWIKIWEB%.TWikiPlugins#PluginAPI][TWiki Plugin API]].
+		* %TWIKIWEB%.InterwikiPlugin (preinstalled) - Link to external sites with text aliases, =SiteAlias:Page=; rules are defined in InterWikis. (Get more Plugins from the TWiki:Plugins web.) 
+	* *[[%TWIKIWEB%.TWikiTemplates][TWikiTemplates]]* - New, more flexible template system.
+	* *[[%TWIKIWEB%.TWikiSkins][TWikiSkins]]* - Overwrite template headers and footers; page content is unaffected. 
+	* *[[%TWIKIWEB%.TWikiMetaData][TWikiMetaData]]* - New data format 
+	* *[[%TWIKIWEB%.TWikiForms]]* - Create multiple input forms per web; data is rendered in HTML tables.
+	* *[[%TWIKIWEB%.ManagingTopics][ManagingTopics]]* - Individual topics can be renamed, moved and deleted through the browser. Deleted topics are stored in a common Trash web.
+	* *[[%TWIKIWEB%.TWikiUserAuthentication#ChangingPasswords][Change passwords]]* - Change and reset passwords using forms.
+	* *[[%TWIKIWEB%.TWikiVariables][TOC (Table of Contents)]]* - =%<nop>TOC%= variable generates a hierarchical table of contents from topic headings: &lt;h1&gt;...&lt;h6&gt;.
+	* *[[%TWIKIWEB%.TWikiVariables][Arbitrary Text for <nop>WikiWord Links]]* - Text formatting rules to generate automatic links from any combination of words and spaces.
+	* *[[%TWIKIWEB%.FileAttachment][Attachments Under Revision Control]]* - Changes made to files attached to topics are now saved under revision control (RCS).
+	* *[[%TWIKIWEB%.TWikiAccessControl#SuperAdminGroup][<nop>SuperAdministrator Group]]* - Lets you to make the members of one user group - by default, <nop>TWikiAdminGroup - into TWiki superusers, with the ability to overwrite locked topics from the browser interface. (This gets around the problem of topic lockouts, caused by typos in access privilege definitions.)
+	* *HierarchicalNavigation* uses new [[%TWIKIWEB%.TWikiMetaData][Meta Data]] variables to link hierarchically.
+	* *Convert to XHTML* - Pages are rendered for display in XHTML 1.0, as far as possible without breaking HTML 3.2 compliance.
+
+
+---++ TWiki Directory Structure and File Names
+
+The TWiki directory structure remains the same, with one exception, the TWiki configuration file and Perl modules have been moved from the =twiki/bin= directory into it's own =twiki/lib= directory tree. The following files have been renamed and moved:
+
+| *From TWiki 01-Dec-2000:*		| *To TWiki 01-Dec-2001:* |
+| =twiki/bin/wikicfg.pm=	 | =twiki/lib/TWiki.cfg= |
+| =twiki/bin/wiki.pm=		 | =twiki/lib/TWiki.pm= |
+| =twiki/bin/wikiaccess.pm= | =twiki/lib/TWiki/Access.pm= |
+| =twiki/bin/wikiprefs.pm=  | =twiki/lib/TWiki/Prefs.pm= |
+| =twiki/bin/wikisearch.pm= | =twiki/lib/TWiki/Search.pm= |
+| =twiki/bin/wikistore.pm=  | =twiki/lib/TWiki/Store.pm= |
+
+A new =twiki/lib/TWiki/Plugins= directory contains the new Plugin modules.
+
+
+---++ Standard Upgrade Procedure from 01-Sep-2001 to 01-Dec-2001 Release
+
+This incremental update can be performed easily.
+
+The following steps describe the upgrade assuming that =$TWIKIROOT= is the root of your current 01-Sep-2001 release.
+
+	1. Back up and prepare:
+		* Back up all existing TWiki directories =$TWIKIROOT/bin=, =$TWIKIROOT/pub=, =$TWIKIROOT/data=, =$TWIKIROOT/templates=.
+		* Create a temporary directory and unpack the ZIP file there.
+	1. Update files in TWiki root:
+		* Overwrite all =*.html= and =*.txt= files in =$TWIKIROOT= with the new ones.
+	1. Update template files:
+		* Overwrite all template files in =$TWIKIROOT/templates= with the new ones.
+	1. Update script files:
+		* Overwrite all script files in =$TWIKIROOT/bin= with the new ones.
+	1. Update library files:
+		* Overwrite the =TWiki.pm= library in =$TWIKIROOT/lib= with the new one.
+		* Overwrite all =*.pm= library files in =$TWIKIROOT/lib/TWiki= and =$TWIKIROOT/lib/TWiki/Plugins= with the new ones.
+	1. Update data/TWiki files: (in case you want the updated docs)
+		* Using your browser, merge the new <nop>TWiki.TWikiRegistration topic (or <nop>TWiki.TWikiRegistrationPub in case you used that one) into your existing <nop>TWiki.TWikiRegistration topic.
+		* In the temporary =twiki/data/TWiki= directory where you unzipped the installation package:
+			* Remove the files you do *not* want to upgrade: =TWikiPreferences.*=, =WebNotify.*=, =WebPreferences.*=, =WebStatistics.*= and all =WebTopic*= files.
+			* In case the cgi-scripts are not running as user =nobody=: The =*,v= RCS repository files delivered with the installation package are locked by user nobody and need to be changed to the user of your cgi-scripts, e.g., =www-data=. A simple way to switch the locker of the RCS files is to use sed:
+			  <br /> =for f in *,v; do sed 's/nobody\:/www-data\:/' $f &gt; x; mv x $f; done=
+		* Move all remaining =*.txt= and =*.txt,v= files from the temporary =data/TWiki= directory to your =$TWIKIROOT/data/TWiki= directory.
+	1. Update pub/TWiki files:
+		* Move the new =pub/TWiki/TWikiDocGraphics= directory into your =$TWIKIROOT/pub/TWiki= directory.
+
+
+---++ Standard Upgrade Procedure from 01-Dec-2000 to 01-Dec-2001 Release
+
+The idea is to have the new and old installation work in parallel so that you can test the new installation before switching over. That way you can make the switch on your live TWiki installation within one minute without affecting the users.
+
+| *Before Switch:* || *After Switch:* ||
+| *Current 01-Dec-2000:* | *New 01-Dec-2001:* | *Obsolete 01-Dec-2000:* | *New 01-Dec-2001:* |
+| =twiki/templates/= | =twiki/templates2/= | =twiki/templates1/= | =twiki/templates/= |
+| =twiki/bin/= | =twiki/bin/2/= | (overwritten) | =twiki/bin/= |
+| (N/A) | =twiki/bin/lib/= | (N/A) | =twiki/lib/= |
+| =twiki/data/TWiki= | =twiki/data/TWiki2= | =twiki/data/TWiki1= | =twiki/data/TWiki= |
+| (other directories do not change) ||||
+
+Alternatively you could move the existing installation away, install the 01-Dec-2001 release into it's place and move your webs and pub files back.
+
+Follow this step-by-step guide to upgrade from the 01-Dec-2000 TWiki to the 01-Dec-2001 release, importing your original page data and related files:
+
+---+++ Pre-Upgrade Preparation
+
+Two major areas of TWiki functionality - TWikiTemplates and TWikiForms (input forms associated with a topic)- are entirely different in the new TWiki. If you've customized your templates or use Category Tables, read those sections _before_ starting your upgrade.
+
+The following steps describe the upgrade on Unix. Windows setup is very similar. It's assumed that =$TWIKIROOT= is the root of your current 01-Dec-2000 release, ex: =export TWIKIROOT=/some/dir/=
+
+---+++ Step 1: Backup & Unpack
+
+	1. Back up all existing TWiki directories =twiki/bin=, =twiki/pub=, =twiki/data=, =twiki/templates=.
+	1. Create a temporary directory and unpack the ZIP file there:
+	  <br /> =mkdir -p ~/tmp/=
+	  <br /> =cp -p ~/downloads/TWiki20011201.zip ~/tmp/=
+	  <br /> =cd ~/tmp/=
+	  <br /> =unzip ~/tmp/TWiki20011201.zip=
+
+---+++ Step 2: Upgrade TWiki document files 
+
+	1. Move the document files to your TWiki root ( =twiki= ):
+	  <br /> =mv ~/tmp/TWiki*.html $TWIKIROOT=
+	  <br /> =mv ~/tmp/index.html $TWIKIROOT=
+	  <br /> =mv ~/tmp/readme.txt $TWIKIROOT=
+	  <br /> =mv ~/tmp/license.txt $TWIKIROOT=
+
+---+++ Step 3: Install new template files 
+
+	1. Move & rename the template directory to a temporary =twiki/templates2= directory, ex:
+	  <br /> =mv ~/tmp/templates $TWIKIROOT/templates2=
+	1. Pay attention to the file and directory permissions (security issue). Set file permissions, ex:
+	  <br /> =chmod 644 *.cgi=
+
+---+++ Step 4: Install new data and pub files 
+
+	1. Move the TWiki web to a temporary TWiki2 =twiki/data/TWiki2= directory. Do the same to files attached to this web, ex:
+	  <br /> =mv ~/tmp/data/TWiki $TWIKIROOT/data/TWiki2=
+	  <br /> =mv ~/tmp/pub/TWiki $TWIKIROOT/pub/TWiki2=
+	1. Move & rename the Know web to a temporary =twiki/data/Know2= directory, ex:
+	  <br /> =mv ~/tmp/data/Know $TWIKIROOT/data/Know2=
+	  <br /> =mv ~/tmp/pub/Know $TWIKIROOT/pub/Know2=
+	1. Move the _default and Trash web, ex:
+	  <br /> =mv ~/tmp/data/_default $TWIKIROOT/data=
+	  <br /> =mv ~/tmp/data/Trash $TWIKIROOT/data=
+	1. Move the MIME types file, ex:
+	  <br /> =mv ~/tmp/data/mime.types $TWIKIROOT/data=
+	1. Move the TWiki logo files, ex:
+	  <br /> =mv ~/tmp/pub/*.gif $TWIKIROOT/pub=
+	1. Pay attention to the file permissions of the =TWiki2= and =Know2= directories and its files. The files must be writable by the cgi-scripts (usually user =nobody=).
+	1. In case the cgi-scripts are not running as user =nobody=: The =*,v= RCS repository files delivered with the installation package are locked by user nobody and need to be changed to the user of your cgi-scripts, e.g., =www-data=. A simple way to switch the locker of the RCS files is to use sed:
+	  <br /> =for f in *,v; do sed 's/nobody\:/www-data\:/' $f &gt; x; mv x $f; done=
+
+---+++ Step 5: Install new CGI scripts
+
+	1. Move & rename the CGI script directory to a temporary =twiki/bin/2= directory, ex:
+	  <br /> =mv ~/tmp/bin $TWIKIROOT/bin/2=
+	1. If necessary, change the script names to include the required extension, ex: =.cgi=
+	1. Copy any additional scripts you might have from the 01-Dec-2000 release, ex:
+	  <br /> =cp -p $TWIKIROOT/bin/somescript $TWIKIROOT/bin/2=
+	1. In case you use basic authentication, rename =.htaccess.txt= to =.htaccess= and customize it, ex:
+	  <br /> =cd $TWIKIROOT/bin/2=
+	  <br /> =mv .htaccess.txt .htaccess=
+	  <br /> =diff ../.htaccess .=
+	  <br /> and merge the content
+	1. Pay attention to the file and directory permissions (security issue). Set permissions, ex:
+	  <br /> =chmod 755 *.cgi=
+
+---+++ Step 6: Install new Perl library files
+
+	1. Move the lib directory to a temporary =twiki/bin/lib= directory, ex:
+	  <br /> =mv ~/tmp/lib $TWIKIROOT/bin=
+	1. Pay attention to the file and directory permissions (security issue). Set permissions, ex:
+	  <br /> =chmod 644 *.pm=
+
+---+++ Step 7: Set configurations and test installation
+
+	1. Merge the content of the old =twiki/bin/wikicfg.pm= into the new =twiki/lib/TWiki.cfg= configuration file. Use the =diff= command to find out the differences, ex:
+	  <br /> =cd $TWIKIROOT/bin/lib=
+	  <br /> =diff ../wikicfg.pm TWiki.cfg=
+	1. Make sure to set the correct temporary location of templates and scripts, ex:
+	  <br /> =$scriptUrlPath	 = "/twiki/bin/2";=
+	  <br /> =$templateDir		= "/home/httpd/twiki/templates2";=
+	1. Do *not* merge the functions =extendHandleCommonTags=, =extendGetRenderedVersionOutsidePRE=, =extendGetRenderedVersionInsidePRE= from the old =twiki/bin/wikicfg.pm=. This is now handled by the Default plugin =twiki/lib/TWiki/Plugins/Default.pm= 
+	1. Test your new TWiki installation to see if you can view topics. Point your browser to the old installation and fix the URL to see the new installation, ex:
+		* Old URL: =http://localhost/cgi-bin/view=
+		* New URL: =http://localhost/cgi-bin/2/view=
+
+---+++ Step 8: Update topics
+
+You can do the following changes using your old TWiki 01-Dec-2000 or new TWiki 01-Dec-2001 installation. Pointing your browser to the old installation for edit-copy-edit-paste operations is recommended, so that users don't get surprised by meta data content showing up in topics.
+
+	1. Remember that you now have two TWiki webs:
+		* The original =TWiki= web.
+		* The new =TWiki2= web, which gets renamed to =TWiki= when you switch over the installation.
+	1. In case you customized =TWiki.TWikiRegistration=, merge your changes back into =TWiki2.TWikiRegistration=.
+	1. Copy to =TWiki2= any topics that you created in the =TWiki= web.
+		* Do the same for 
+	1. In =TWiki2.TWikiPreferences=, merge the old =TWiki.TWikiPreferences= settings and customize it.
+		* Add your webs to WIKIWEBLIST
+		* Set the WIKIWEBMASTER
+		* Set the SMTPMAILHOST
+	1. In =WebPreferences= of all webs, add or change the following web preferences: (see =TWiki.WebPreferences=)
+		* Add a NOSEARCHALL in case you want to exclude the web from a =web="all"= search:
+		  <br /> =* Set NOSEARCHALL = on=
+		* In WEBTOPICLIST, remove the =%<nop>WEB% . {}= decoration from the list (it is now in the templates), ex:
+		  <br /> =* Set WEBTOPICLIST = &lt;a href="%HOMETOPIC%"&gt;Home&lt;/a&gt;=
+		  <br /> =&nbsp; | &lt;a href="WebChanges"&gt;Changes&lt;/a&gt;=
+	<br /> =&nbsp; | &lt;a href="WebIndex"&gt;Index&lt;/a&gt;=
+	<br /> =&nbsp; | &lt;a href="WebSearch"&gt;Search&lt;/a&gt;=
+	<br /> =&nbsp; | Go &lt;input type="text" name="topic" size="16" /&gt;=
+		* Add a these new preferences:
+		  <br /> =* Set DENYWEBVIEW ==
+		  <br /> =* Set ALLOWWEBVIEW ==
+		  <br /> =* Set DENYWEBRENAME ==
+		  <br /> =* Set ALLOWWEBRENAME ==
+		* Set the FINALPREFERENCES:
+		  <br /> =* Set FINALPREFERENCES = WEBTOPICLIST, DENYWEBVIEW, ALLOWWEBVIEW, DENYWEBCHANGE, ALLOWWEBCHANGE, DENYWEBRENAME, ALLOWWEBRENAME=
+	1. Optional: In =WebSearch= of all webs, replace content with this one line:
+		  <br /> =%<nop>INCLUDE{"%<nop>TWIKIWEB%.WebSearch"}%=
+	1. Optional: In =WebChanges= of all webs, replace content with this one line:
+		  <br /> =%<nop>INCLUDE{"%<nop>TWIKIWEB%.WebChanges"}%=
+
+---+++ Step 9: Customize template files 
+
+__NOTE:__ Skip this step if you did not customize your template files.
+
+	1. Remember that you have now two template directories:
+		* The original =twiki/templates=.
+		* The new =twiki/templates2=, which gets renamed to =twiki/templates= when you switch over the installation.
+	1. Customized templates and skins need to be upgraded to the new TWikiTemplates. This isn't difficult, but you have be familiar with the new template set-up before starting the conversion. The safest way is to use the new templates as a base and to merge your changes back. Changes in new templates:
+		* Templates are now rendered by TWiki. You can use all TextFormattingRules, but you have to escape unwanted ones. Also, remove empty lines unless you want a ==&lt;p /&gt;= tag added.
+		* Added TWikiMetaData rendering.
+	1. Form Templates replace the <nop>TWikiCategoryTables:
+		* Create a replacement =WebForm= topic based on =twikicatitems.tmpl= in each web that uses a Category Table. See details in TWikiForms and compare with the settings in the =Know2.<nop>WebPreferences= topic.
+		  <br /> %X% Do not remove the =twikicatitems.tmpl= file, it is still used for topics that are of the old format.
+		* Searches need to be adjusted to deal with format change. It is possible to define a regular expression search that can deal at the same time with topics in the old format and new format.
+			* __Example:__ List all topics in the Know web that have a Know.TopicClassification of Know.PublicFAQ: <br /> <tt>%<nop>SEARCH{ "[T]opicClassification.*?(td..td|value\=).*?[P]ublicFAQ" casesensitive="on" regex="on" nosearch="on" web="Know"}%</tt> <br /> (The =[T]= and =[P]= is done so that search does not find the topic where this search string is located in!)
+			* __Example:__ Create a link that lists all topics in the Know web with a Know.TopicClassification of Know.PublicFAQ: <br /> <tt>[<nop>[%<nop>SCRIPTURL%/search%<nop>SCRIPTSUFFIX%/Know/?scope=text<br />&amp;search=%5BT%5DopicClassification.*%3F%28td..td%7C<br />value%5C%3D%29.*%3F%5BP%5DublicFAQ&amp;regex=on][All Public FAQ]<nop>]</tt> <br /> [[%SCRIPTURL%/search%SCRIPTSUFFIX%/Know/?scope=text&amp;search=%5BT%5DopicClassification.*%3F%28td..td%7Cvalue%5C%3D%29.*%3F%5BP%5DublicFAQ&amp;regex=on][All Public FAQ]]
+	1. For each web that has a custom ==notedited.tmpl== template, create an equivalent WebTopicEditTemplate to conform with the new [[%TWIKIWEB%.TWikiTemplates#TemplateTopics][TemplateTopics]]. The new format replaces the =notedited.tmpl=, =notext.tmpl= and =notwiki.tmpl= templates.
+
+---+++ Step 10: Switch over to new installation
+
+In this step, you move the working 01-Dec-2001 installation to the old 01-Dec-2000 installation, so that users don't have to change the URL.
+
+	1. Test your new 01-Dec-2001 installation under =twiki/bin/2/view= to make sure everything works as expected.
+		* __NOTE:__ Don't worry about the Plugins, they'll work after the switch.
+	1. Edit =$TWIKIROOT/bin/lib/TWiki.cfg= and remove the =/2= from =$scriptUrlPath= and =$templateDir=, ex:
+	  <br /> =$scriptUrlPath	 = "/twiki/bin";=
+	  <br /> =$templateDir		= "/home/httpd/twiki/templates";=
+	1. Rename the =TWiki2= web to =TWiki=, including attachments, ex:
+	  <br /> =cd $TWIKIROOT/data=
+	  <br /> =mv TWiki TWiki1=
+	  <br /> =mv TWiki2 TWiki=
+	  <br /> =cd $TWIKIROOT/pub=
+	  <br /> =mv TWiki TWiki1=
+	  <br /> =mv TWiki2 TWiki=
+	1. Rename the =templates2= directory to =templates=, ex:
+	  <br /> =cd $TWIKIROOT=
+	  <br /> =mv templates templates1=
+	  <br /> =mv templates2 templates=
+	1. Move the =lib= directory one level up from =$TWIKIROOT/bin/lib= to =$TWIKIROOT/lib=, ex:
+	  <br /> =cd $TWIKIROOT=
+	  <br /> =mv bin/lib .=
+	1. Copy content of =bin/2= to =bin=, ex:
+	  <br /> =cd $TWIKIROOT/bin=
+	  <br /> =cp -p bin/2/* .=
+	  <br /> =cp -p bin/2/.htaccess .=
+	1. Point your browser to the original URL and make sure the relocated 01-Dec-2001 installation works as expected: check browsing, searching and user registration.
+	1. Clean up and remove obsolete directories:
+		* Remove directory =$TWIKIROOT/bin/2=
+		* Remove directory =$TWIKIROOT/templates1=
+		* Remove directory =$TWIKIROOT/data/TWiki1=
+		* Remove directory =$TWIKIROOT/pub/TWiki1=
+		* Remove temporary directory, ex: =~/tmp=
+
+---+++ Step 11: Test the TWiki Plugins
+
+	1. Test the new TWikiPlugins by checking the Plugins settings in TWikiPreferences.
+		* The =<nop>EmptyPlugin=, =<nop>DefaultPlugin=, and =<nop>InterwikiPlugin= should be preinstalled. To check the %TWIKIWEB%.InterwikiPlugin, go to its page.
+	1. If you have customized the functions =extendHandleCommonTags=, =extendGetRenderedVersionOutsidePRE= and =extendGetRenderedVersionInsidePRE= in =twiki/bin/wikicfg.pm=:
+		* Merge those changes back into =twiki/lib/TWiki/Plugins/Default.pm=
+
+---+++ General Format Changes
+
+	* The format of the =%<nop>GMTIME{"..."}%= and =%<nop>SERVERTIME{"..."}%= variables is now =="$hour:$min"== instead of ="hour:min"=. More in %TWIKIWEB%.TWikiVariables.
+
+	* [[TWikiVariables][ExtendingTableSyntax]]: Enhanced table syntax might have unwanted side effect: =| <nop>*bold*<nop> |= cells, =|  center aligned  |= and =|	right aligned |= cells, span multiple columns using =| empty cells |||=. More in TextFormattingRules.
+
+	* Use ==Net::SMTP== module instead of =sendmail= if installed. 
+
+	* Use ==&lt;verbatim&gt; ... &lt;/verbatim&gt;== tags instead of =&lt;pre&gt; ... &lt;/pre&gt;= tags where appropriate. More in %TWIKIWEB%.TextFormattingRules.
+
+	* New variable ==%<nop>STARTINCLUDE%== and ==%<nop>STOPINCLUDE%== variables to control what gets included of a topic. More in %TWIKIWEB%.TWikiVariables.
+	
+	* FileAttachment info is now stored as [[TWikiMetaData][TWiki Meta Data]].
+		* Upgrading of imported pagess is done automatically after first edit, on save. "In memory" upgrade is done on topic view.
+		* Attachments are now under revision control: =$attachAsciiPath= in =TWiki.cfg= defines which file types are stored in ASCII, otherwise, binary format is used. This means that the RCS version used should support binary files.
+
+	* Handling for topic-specific templates like =edit.new.tmpl= has been removed and replaced by template topics in the new TWikiTemplates.
+
+	* A new file =warning.txt= file can appear in the =data= directory. It may contain diagnostic info identifying problems that need fixing. This file could get fairly large if you have a lot of problems your site - you can delete it at any time.
+
+---++ Known Issues
+
+	* Check TWiki:Codev/KnownIssuesOfTWiki01Dec2001 for known issues of TWiki 01 Dec 2001 (production release)
+	* Check TWiki:Codev/KnownIssuesOfTWiki01Sep2001 for known issues of TWiki 01 Sep 2001 (production release)
+		
+-- JohnTalintyre - 18 Jul 2001 <br />
+-- PeterThoeny - 03 Dec 2001<br />
+-- Main.MikeMannix - 05 May 2002
+
+
+%META:TOPICMOVED{by="PeterThoeny" date="1040114770" from="TWiki.TWikiUpgradeGuide" to="TWiki.TWikiUpgradeTo01Dec2001"}%
+@
+
+
+1.30
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1020633411" format="1.0" version="1.30"}%
+d317 1
+@
+
+
+1.29
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018172325" format="1.0" version="1.29"}%
+a7 2
+---++ Overview
+
+d84 2
+a85 2
+			* Remove the files you do *not* want to upgrade: =TWikiPreferences.*=, =Main.TWikiSiteDirectory.*=, =WebNotify.*=, =WebPreferences.*=, =WebStatistics.*= and all =WebTopic*= files.
+			* In case the cgi-scripts are not running as user =nobody=: The =*,v= RCS repository files delivered with the installation package are locked by user nobody and need to be changed the user of your cgi-scripts, i.e. =www-data=. A simple way to switch the locker of the RCS files is to use sed:
+d154 1
+a154 1
+	1. In case the cgi-scripts are not running as user =nobody=: The =*,v= RCS repository files delivered with the installation package are locked by user nobody and need to be changed the user of your cgi-scripts, i.e. =www-data=. A simple way to switch the locker of the RCS files is to use sed:
+d200 2
+a201 2
+	1. Copy =TWiki.Main.TWikiSiteDirectory= to =TWiki2.Main.TWikiSiteDirectory=.
+		* Do the same for any other topics you might have created in the =TWiki= web.
+d239 1
+a239 1
+		  <br /> __NOTE:__ Do not remove the =twikicatitems.tmpl= file, it is still used for topics that are of the old format.
+d313 4
+a316 2
+-- MikeMannix - 12 Sep 2001 <br />
+-- PeterThoeny - 03 Dec 2001 <br />
+@
+
+
+1.28
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1016272805" format="1.0" version="1.28"}%
+d86 1
+a86 1
+			* Remove the files you do *not* want to upgrade: =TWikiPreferences.*=, =TWikiWebsTable.*=, =WebNotify.*=, =WebPreferences.*=, =WebStatistics.*= and all =WebTopic*= files.
+d202 1
+a202 1
+	1. Copy =TWiki.TWikiWebsTable= to =TWiki2.TWikiWebsTable=.
+@
+
+
+1.27
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1007582375" format="1.0" version="1.27"}%
+d253 1
+a253 1
+	1. Edit =$TWIKIROOT/bin/2/TWiki.cfg= and remove the =/2= from =$scriptUrlPath= and =$templateDir=, ex:
+@
+
+
+1.26
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1007461980" format="1.0" version="1.26"}%
+d65 1
+a65 1
+---++ Standard Upgrade Procedure from 01-Sep-2000 to 01-Dec-2001 Release
+d69 1
+a69 1
+The following steps describe the upgrade assuming that =$TWIKIROOT= is the root of your current 01-Sep-2000 release.
+@
+
+
+1.25
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1007453640" format="1.0" version="1.25"}%
+d312 1
+@
+
+
+1.24
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1002073392" format="1.0" version="1.24"}%
+d6 1
+a6 1
+_Upgrade from TWiki 01-Dec-2000 to TWiki 01-Sep-2001 (previous to new full release)_
+d10 4
+a13 1
+The latest version of TWiki (01-Sep-2001) involves several major new features and numerous enhancements to the last full version (01-Dec-2000). The file system set-up is almost identical, but much of the underlying data structure and processes is new. With all the changes, the upgrade procedure is straightforward, and your existing page data is imported directly. 
+d17 1
+a17 1
+	* To upgrade from a 01-Dec-2000 standard installation to the new, next generation 01-Sep-2001 TWiki Production Release, follow the instructions below.
+d23 7
+d32 1
+a32 1
+The 01-Sep-2001 release includes the following new features and enhancements:
+d49 1
+d54 1
+a54 1
+| *From TWiki 01-Dec-2000:*		| *To TWiki 01-Sep-2001:* |
+d64 31
+a94 1
+---++ Standard Upgrade Procedure
+d99 1
+a99 1
+| *Current 01-Dec-2000:* | *New 01-Sep-2001:* | *Obsolete 01-Dec-2000:* | *New 01-Sep-2001:* |
+d106 1
+a106 1
+Alternatively you could move the existing installation away, install the 01-Sep-2001 release into it's place and move your webs and pub files back.
+d108 1
+a108 1
+Follow this step-by-step guide to upgrade from the 01-Dec-2000 TWiki to the 01-Sep-2001 release, importing your original page data and related files:
+d121 1
+a121 1
+	  <br /> =cp -p ~/downloads/TWiki20010901.zip ~/tmp/=
+d123 1
+a123 1
+	  <br /> =unzip ~/tmp/TWiki20010901.zip=
+d157 1
+a157 1
+	  <br /> =for f in *,v; do sed 's/nobody\:/www-data\:/' $f > x; mv x $f; done=
+d196 1
+a196 1
+You can do the following changes using your old TWiki 01-Dec-2000 or new TWiki 01-Sep-2001 installation. Pointing your browser to the old installation for edit-copy-edit-paste operations is recommended, so that users don't get surprised by meta data content showing up in topics.
+d249 1
+a249 1
+In this step, you move the working 01-Sep-2001 installation to the old 01-Dec-2000 installation, so that users don't have to change the URL.
+d251 1
+a251 1
+	1. Test your new 01-Sep-2001 installation under =twiki/bin/2/view= to make sure everything works as expected.
+d274 1
+a274 1
+	1. Point your browser to the original URL and make sure the relocated 01-Sep-2001 installation works as expected: check browsing, searching and user registration.
+d311 1
+a311 1
+	* Check TWiki:Codev/KnownIssuesOfTWiki01Sep2001 for known issues of TWiki 01 Sep 2001 (production release)
+d315 1
+a315 1
+-- PeterThoeny - 02 Oct 2001 <br />
+@
+
+
+1.23
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1000798012" format="1.0" version="1.23"}%
+d201 3
+a203 1
+		* Searches need to be adjusted to deal with format change - if all topics are upgrades, a more specific search can be done.
+d274 1
+a274 1
+-- PeterThoeny - 12 Sep 2001 <br />
+@
+
+
+1.22
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000791372" format="1.0" version="1.22"}%
+d170 6
+a175 2
+		* Modify WEBTOPICLIST, ex:
+		  <br /> =* Set WEBTOPICLIST = [<nop>[%<nop>HOMETOPIC%][Home]] %<nop>SEP% [<nop>[WebChanges][Changes]] %<nop>SEP% [<nop>[WebIndex][Index]] %<nop>SEP% [<nop>[WebSearch][Search]] %<nop>SEP% Go &lt;input type="text" name="topic" size="16" /&gt;=
+d181 1
+a181 1
+		* Set FINALPREFERENCES:
+d183 1
+a183 1
+	1. In =WebSearch= of all webs, replace content with this one line:
+d185 1
+a185 1
+	1. In =WebChanges= of all webs, replace content with this one line:
+d199 2
+a200 1
+		* Create a replacement TWikiForms template based on =twikicatitems.tmpl= in each web that used a Category Table.
+d206 1
+a206 1
+In this step, you move the working 01-Sep-2001 installation to the old 01-Dec-2000 installation, so that you don't have to change the URL.
+d268 1
+a268 1
+		* Check TWiki:Codev/KnownIssuesOfTWiki01Sep2001 for known issues of TWiki 01 Sep 2001 (production release)
+@
+
+
+1.21
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000784824" format="1.0" version="1.21"}%
+d197 1
+a197 1
+	1. For each web that has a custom ==notedited.tmpl== template, create a WebTopicEditTemplate to conform with the new [[#SelectableNewTopicTemplates]] feature. Retired =notedited.tmpl=, =notext.tmpl= and =notwiki.tmpl= templates.
+@
+
+
+1.20
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1000599260" format="1.0" version="1.20"}%
+d24 14
+a37 14
+	* *[[TWikiPlugins]]* - Easily install program enhancements using external plug-in modules. Developers can create plug-ins in Perl, with the [[TWikiPlugins#PluginAPI][TWiki Plugin API]].
+		* InterwikiPlugin (preinstalled) - Link to external sites with text aliases, =SiteAlias:Page=; rules are defined in InterWikis. (Get more Plugins from the TWiki:Plugins web.) 
+	* *[[TWikiTemplates]]* - New, more flexible template system.
+	* *[[TWikiSkins]]* - Overwrite template headers and footers; page content is unaffected. 
+	* *[[TWikiMetaData]]* - New data format 
+	* *[[TWikiForms]]* - Create multiple input forms per web; data is rendered in HTML tables.
+	* *[[ManagingTopics]]* Individual topics can be renamed, moved and deleted through the browser. Deleted topics are stored in a common Trash web.
+	* *[[ChangingPasswords][Change passwords]]* Change and reset passwords using forms.
+	* *[[TWikiVariables][TOC (Table of Contents)]]* - =%<nop>TOC%= variable generates a hierarchical table of contents from topic headings: &lt;hI&gt;...&lt;h6&gt;. Set depth.
+	* *[[TWikiVariables][Arbitrary Text for <nop>WikiWord Links]]* - Text formatting rules to generate automatic links from any combination of words and spaces.
+	* *[[FileAttachment][Attachments Under Revision Control]]* Changes made to files attached to topics are now saved under revision control (RCS).
+	* *Convert to XHTML* - Templates and HTML page rendering are in XHTML 1.0 as far as possible without breaking HTML 3.2 compliance.
+	* *HierarchicalNavigation* uses new Meta Data variables to link hierarchically.
+	* *<nop>SuperAdministrator Group* allows you to give one user group - by default, <nop>TWikiAdminGroup - superpowers: the ability to overwrite locked topics from the browser interface. (This gets around a potential problem where mistyping topic access definition could result in locking everyone out.)
+@
+
+
+1.19
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000545368" format="1.0" version="1.19"}%
+d31 1
+a31 1
+	* *[[Changing_Passwords][Change passwords]]* Change and reset passwords using forms.
+d112 2
+@
+
+
+1.18
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1000453984" format="1.0" version="1.18"}%
+d10 1
+a10 1
+The latest version of TWiki (01-Sep-2001) involves several major new features and numerous enhancements to the last full version (01-Dec-2001). The file system set-up is almost identical, but much of the underlying data structure and processes are new. With all the changes, the upgrade procedure is straightforward, and your existing page data is imported directly. 
+d22 1
+a22 1
+The 01 Sep 2001 release includes the following new features and enhancements:
+d31 1
+a31 1
+	* *[[TWikiUserAuthentication#Changing_Passwords][Change passwords]]* Change and reset passwords using forms.
+d71 1
+a71 1
+Two major areas of TWiki functionality - TWikiTemplates and TWikiForms (input forms associated with a topic)- are entirely different in the new TWiki. Therefore, if you've customized your templates or use Category Tables, you should read those sections _before_ starting your upgrade. That way, converting old templates and pages to new will be flow along smoothly!
+d73 1
+a73 1
+The following steps describe the upgrade on Unix. Windows setup is very similar. We assume =$TWIKIROOT= to be the root of your current 01-Dec-2000 release, i.e. =export TWIKIROOT=/some/dir/=
+d153 1
+a153 1
+You can do the following changes using your old TWiki 01-Dec-2000 or new TWiki 01-Sep-2001 installation. Pointing your browser to the old installation for edit-copy-edit-paste operations is recommended so that users don't get surprized by meta-data content showing up in topics.
+d155 1
+a155 1
+	1. Remember that you have now two TWiki webs:
+d184 1
+a184 1
+__Note:__ Skip this step in case you did not customize your template files.
+d199 1
+a199 1
+In this step we relocate the working 01-Sep-2001 installation over the old 01-Dec-2000 installation, so that we don't need to change the URL.
+d202 1
+a202 1
+		* __Note:__ Don't worry about the Plugins, they will work after the switch.
+d224 1
+a224 1
+	1. Point your browser to the original URL and make sure the relocated 01-Sep-2001 installation works as expected, i.e. check browsing, searching and user registration.
+d236 1
+a236 1
+	1. In case you have customized the functions =extendHandleCommonTags=, =extendGetRenderedVersionOutsidePRE= and =extendGetRenderedVersionInsidePRE= in =twiki/bin/wikicfg.pm=:
+d241 1
+a241 1
+	* Format changed of ==%<nop>GMTIME{"..."}%== and ==%<nop>SERVERTIME{"..."}%== variables. Format is now =="$hour:$min"== instead of =="hour:min"==. More in %TWIKIWEB%.TWikiVariables.
+d243 1
+a243 1
+	* [[TWikiVariables][ExtendingTableSyntax]]: Enhanced table syntax might have unwanted side effect: ==| <nop>*bold*<nop> |== cells, ==|  center aligned  |== and ==|	right aligned |== cells, span multiple columns using ==| empty cells |||==. More in TextFormattingRules.
+d245 1
+a245 1
+	* Use ==Net::SMTP== module instead of ==sendmail== if installed. 
+d247 1
+a247 1
+	* Use ==&lt;verbatim&gt; ... &lt;/verbatim&gt;== tags instead of ==&lt;pre&gt; ... &lt;/pre&gt;== tags where appropriate. More in %TWIKIWEB%.TextFormattingRules.
+d251 1
+a251 1
+	* FileAttachment info is now stored as [[TWikiDocumentation#TWiki_Meta_Data][TWiki Meta Data]].
+d259 1
+a259 1
+---++ Known Issues of TWiki 01 Sep 2001
+d263 3
+a265 2
+-- Main.JohnTalintyre - 18 Jul 2001 <br />
+-- Main.PeterThoeny - 12 Sep 2001 <br />
+@
+
+
+1.17
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1000427405" format="1.0" version="1.17"}%
+d24 11
+a34 11
+	* *[[TWikiDocumentation#TWiki_Plugins][TWiki Plugins]]* - Easily install program enhancements using external plug-in modules. Developers can create plug-ins in Perl, with the [[TWikiPlugins#PluginAPI][TWiki Plugin API]].
+		* [[TWikiDocumentation#InterwikiPlugin][InterwikiPlugin]] (preinstalled) - Link to external sites with text aliases, =SiteAlias:Page=; rules are defined in InterWikis. (Get more Plugins from the TWiki:Plugins web.) 
+	* *[[TWikiDocumentation#TWiki_Template_System][TWikiTemplates]]* - New, more flexible template system.
+	* *[[TWikiDocumentation#TWiki_Skins][TWikiSkins]]* - Overwrite template headers and footers; page content is unaffected. 
+	* *[[TWikiDocumentation#TWiki_Meta_Data][TWikiMetaData]]* - New data format 
+	* *[[TWikiDocumentation#TWiki_Form_Template][TWikiForms]]* - Create multiple input forms per web; data is rendered in HTML tables.
+	* *[[TWikiDocumentation#Managing_Topics][Rename/move/delete topics]]* Individual pages can be managed  through the browser. Deleted topics are stored in a common Trash web.
+	* *[[TWikiDocumentation#Changing_Passwords][Change passwords]]* Change and reset passwords using forms.
+	* *[[%TWIKIWEB%.TWikiVariables][TOC (Table of Contents)]]* - =%<nop>TOC%= variable generates a hierarchical table of contents from topic headings: &lt;HI&gt;...&lt;H6&gt;. Set depth.
+	* *[[%TWIKIWEB%.TWikiVariables][Arbitrary Text for <nop>WikiWord Links]]* - Text formatting rules to generate automatic links from any combination of words and spaces.
+	* *[[%TWIKIWEB%.FileAttachment][Attachments Under Revision Control]]* Changes made to files attached to topics are now saved under revision control (RCS).
+d71 1
+a71 1
+Two major areas of TWiki functionality - [[TWikiDocumentation#TWiki_Template_System][templates]] and [[TWikiDocumentation#TWiki_Form_Templates][Category Tables]] (input forms associated with a topic)- are entirely different in the new TWiki. Therefore, if you've customized your templates or use Category Tables, you should read those sections _before_ starting your upgrade. That way, converting old templates and pages to new will be flow along smoothly!
+d189 3
+a191 3
+	1. Customized templates and skins need to be upgraded to the new [[TWikiDocumentation#TWiki_Template_System][TWiki Template System]]. This isn't difficult, but you have be familiar with the new template set-up before starting the conversion. The safest way is to use the new templates as a base and to merge your changes back. Changes in new templates:
+		* Templates are now rendered by TWiki. You can use all [[TWikiDocumentation#TextFormattingRules][TextFormattingRules]], but you have to escape unwanted ones. Also, remove empty lines unless you want a ==&lt;p /&gt;= tag added.
+		* Added [[TWikiDocumentation#TWiki_Meta_Data][TWikiMetaData rendering]].
+d193 1
+a193 1
+		* [[TWikiDocumentation#FormsVsCategoryTables][Create a replacement Form Template]] based on =twikicatitems.tmpl= in each web that used a Category Table.
+d195 1
+a195 1
+	1. For each web that has a custom ==notedited.tmpl== template, create a WebTopicEditTemplate to conform with the new [[TWikiDocumentation#SelectableNewTopicTemplates][SelectableNewTopicTemplates]] feature. Retired =notedited.tmpl=, =notext.tmpl= and =notwiki.tmpl= templates.
+d234 1
+a234 1
+	1. Test the new [[TWikiDocumentation#TWiki_Plugins][TWikiPlugins]] by checking the Plugins settings in TWikiPreferences.
+d243 1
+a243 1
+	* [[%TWIKIWEB%.TWikiVariables][ExtendingTableSyntax]]: Enhanced table syntax might have unwanted side effect: ==| <nop>*bold*<nop> |== cells, ==|  center aligned  |== and ==|	right aligned |== cells, span multiple columns using ==| empty cells |||==. More in %TWIKIWEB%.TextFormattingRules.
+d255 1
+a255 1
+	* Handling for topic-specific templates like =edit.new.tmpl= has been removed and replaced by template topics in the new [[TWikiDocumentation#TWiki_Template_System][TWiki Template System]] )
+d261 1
+a261 1
+		* Check http://TWiki.org/cgi-bin/view/Codev/KnownIssuesOfTWiki01Sep2001 for known issues of TWiki 01 Sep 2001 (production release)
+@
+
+
+1.16
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000277488" format="1.0" version="1.16"}%
+d39 13
+a51 1
+The TWiki directory structure remains the same, with one exception, the new =lib/TWiki/Plugins= directory tree to for the main configuration file, library, internal modules and the new Plugin modules. Pre-existing files were formerly in =bin=.
+d55 12
+d73 2
+d77 6
+a82 6
+		1. Move all existing TWiki directories ( =bin=, =pub=, =data=, =templates= ) to a temporary directory (it's a good idea to do a full back-up first):
+	  <br> =mkdir -p ~/tmp/=
+	  <br> =mv $TWIKIROOT/* ~/tmp/=
+		1. Unpack the zip file into your newly empty working directory:
+	  <br> =cd $TWIKIROOT=
+	  <br> =unzip ~/TWiki20010901.zip=
+d86 153
+a238 64
+		1. Move the document files to your TWiki root ( =twiki= ):
+		  <br> =mv ~/tmp/TWiki*.html $TWIKIROOT=
+		  <br> =mv ~/tmp/index.html $TWIKIROOT=
+		  <br> =mv ~/tmp/readme.txt $TWIKIROOT=
+		  <br> =mv ~/tmp/license.txt $TWIKIROOT=
+
+---+++ Step 3: Upgrade CGI scripts
+
+		1. If necessary, change the script names to include the required extension, ex: =.cgi=
+		1. Restore any additional scripts you might have from the =tmp= directory, ex:
+		  <br> =mv ~/tmp/bin/somescript $TWIKIROOT/bin/=
+		1. Set permissions, ex:
+		  <br> =chmod 755 *.cgi=
+		1. Restore any additional scripts you might have from the =tmp= directory, ex:
+		  <br> =mv ~/tmp/bin/somescript $TWIKIROOT/bin/=
+		1. Test your TWiki installation to see if you can view topics.
+		  
+		* Pay attention to the file and directory permissions (security issue)
+
+---+++ Step 4: Set configurations in <code>TWiki.cfg</code>
+
+		1. Customize the new =lib/TWiki.cfg= configuration file, which replaces the =wikicfg.pm= file. New settings to watch for:
+			* <nop>SuperAdminCanConfig
+			* 
+		1. Test your TWiki installation to see if you can view topics.
+		1. Test the new [[TWikiDocumentation#TWiki_Plugins][TWikiPlugins]] by checking the Plugins settings in TWikiPreferences.
+			* The =<nop>EmptyPlugin=, =<nop>DefaultPlugin=, and =<nop>InterwikiPlugin= should be preinstalled. To check the %TWIKIWEB%.InterwikiPlugin, go to its page.
+		  
+		* Pay attention to the file and directory permissions (security issue)
+
+---+++ Step 5: Upgrade template files 
+
+		1. Customized templates and skins need to be upgraded to the new [[TWikiDocumentation#TWiki_Template_System][TWiki Template System]]. This isn't difficult, but you have be familiar with the new template set-up before starting the conversion. The safest way is to use the new templates as a base and to merge your changes back. Changes in new templates:
+			* Templates are now rendered by TWiki. You can use all [[TWikiDocumentation#TextFormattingRules][TextFormattingRules]], but you have to escape unwanted ones. Also, remove empty lines unless you want a ==&lt;p /&gt;= tag added.
+			* Added [[TWikiDocumentation#TWiki_Meta_Data][TWikiMetaData rendering]]. 
+		1. Form Templates replace the <nop>TWikiCategoryTables:
+			* [[TWikiDocumentation#FormsVsCategoryTables][Create a replacement Form Template]] based on =twikicatitems.tmpl= in each web that used a Category Table.
+			* Searches need to be adjusted to deal with format change - if all topics are upgrades, a more specific search can be done.
+		1. For each web that has a custom ==notedited.tmpl== template, create a WebTopicEditTemplate to conform with the new [[TWikiDocumentation#SelectableNewTopicTemplates][SelectableNewTopicTemplates]] feature. Retired =notedited.tmpl=, =notext.tmpl= and =notwiki.tmpl= templates.
+		1. Test your TWiki installation to see if you can view topics.
+
+---+++ Step 6: Upgrade public files
+
+		1. Move your own public data files and sub-directories from the original =pub= directory to the new installation: ( =$TWIKIROOT/pub= )
+		  <br> =mv ~/tmp/pub/TWiki/somefiles.ext $TWIKIROOT/pub/=
+		  <br> =mv ~/tmp/pub/TWiki/somedirectory $TWIKIROOT/pub/=
+
+---+++ Step 7: Upgrade data files 
+
+		1. Move the =tmp/data/TWiki= directory to your installation: ( =twiki/data= )
+		  <br> =mv ~/tmp/data/TWiki $TWIKIROOT/data/=
+		  <br> Pay attention to the file permissions of the =TWiki= directory and its files. The files must be writable by the cgi-scripts (usually user "nobody")
+		1. =TWikiRegistration= moved from TWiki.Main to TWiki.TWiki. In case you customized =TWikiRegistration= , merge your changes back into =TWiki.TWikiRegistration= , then delete =$TWIKIROOT/data/Main/TWikiRegistration*=.
+		1. =TWikiPreferences= into =TWiki.TWikiPreferences=.
+		1. Merge your changes to the =WebPreferences= topics in all your webs into =WebPreferences=
+		1. Modify the =WebPreferences= topics in all your webs to reflect the following:
+			* 
+			* In case you want to exclude a web from a =web="all"= search: Set this new preference
+			  <br> =Set NOSEARCHALL = on=
+		1. The =WebSearch= topic has considerable changes. Copy the one from =TWiki.TWiki= into all webs, or merge them if you made changes. To copy, do an edit-copy-edit-paste operation.
+		1. __Change the =WebHome= topics in all your webs to reflect these changes:__
+		1. If you are using ==.htaccess==, add the =rename= script
+		  * You may want to add =[ALLOW|DENY][WEB|TOPIC]RENAME= in some places, like  %TWIKIWEB%.TWikiPreferences, WebPreferences and %MAINWEB%.TWikiUsers
+		  
+d258 2
+a259 2
+	
+---++ Known Upgrade Issues
+d263 2
+a264 3
+		* __Upgrading requires extensive changes be made to topics in the TWiki web.__
+
+-- Main.JohnTalintyre - 18 Jul 2001 <br>	
+@
+
+
+1.15
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000000073" format="1.0" version="1.15"}%
+d26 1
+a26 1
+	* *[[TWikiDocumentation#TWiki_Template_System][TWikiTemplateSystem]]* - New, more flexible template system.
+d29 1
+a29 1
+	* *[[TWikiDocumentation#TWiki_Form_Template][TWikiFormTemplate]]* - Create multiple input forms per web; data is rendered in HTML tables.
+@
+
+
+1.14
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999990233" format="1.0" version="1.14"}%
+d25 1
+a25 1
+		* *[[TWikiDocumentation#InterwikiPlugin][InterwikiPlugin]]* (preinstalled) - Link to external sites with text aliases, =SiteAlias:Page=; rules are defined in InterWikis. (Get more Plugins from the TWiki:Plugins web.) 
+d32 1
+a32 1
+	* *TOC (Table of Contents)* - =%<nop>TOC%= variable generates a hierarchical table of contents from topic headings: &lt;HI&gt;...&lt;H6&gt;. Set depth.
+d34 4
+a37 3
+	* *[[%TWIKIWEB%.FileAttachment][Attachments Under Revision Control]]* Changes to files attached to topics - - are now tracked under revision control (RCS).
+	* *ConvertToXHTML10* - Templates and HTML page rendering are in XHTML 1.0 as far as possible without breaking HTML 3.2 compliance.
+	* *HierarchicalNavigation* uses new Meta Data variables to link hierarchically, for example, as in Yahoo! and other search sites. 
+d43 5
+a47 1
+Follow this step-by-step guide to upgrade the 01 Dec 2000 version to the 01 Sep 2001 release, and import your original page data:
+d51 1
+a51 3
+		1. Backup all existing TWiki directories ( =bin=, =pub=, =data=, =templates= )
+
+		1. Unpack the zip file into some working directory:
+d53 4
+a56 2
+	  <br> =cd ~/tmp=
+	  <br> =unzip ~/TWiki20001201.zip=
+d68 19
+a86 9
+		1. Rename your original =twiki/bin= directory: ( =twiki/bin= )
+		  <br> =mv $TWIKIROOT/bin $TWIKIROOT/bin.old=
+		1. Move the new scripts to your original =twiki/bin= location, i.e.
+		  <br> =mv ~/tmp/bin $TWIKIROOT/bin=
+		1. Merge the changes in your current =wikicfg.pm= into the new =wikicfg.pm=. We suggest using =diff -c= to compare the two files if you have made heavy changes to the file:
+		  <br> =diff -c $TWIKIROOT/bin.old/wikicfg.pm $TWIKIROOT/bin/wikicfg.pm | less=
+		1. Restore any additional scripts you might have from the old directory, ex:
+		  <br> =mv $TWIKIROOT/bin.old/somescript $TWIKIROOT/bin/=
+		1. Test your TWiki installation if you can view topics.
+d90 1
+a90 1
+---+++ Step 4: Upgrade template files 
+d92 1
+a92 6
+		1. Rename your original =twiki/templates= directory: ( =twiki/templates= )
+		  <br> =mv $TWIKIROOT/templates $TWIKIROOT/templates.old=
+		1. Move the new templates to your original =twiki/templates= location:
+		  <br> =mv ~/tmp/templates $TWIKIROOT/templates=
+		1. Customized templates and skins need to be upgraded to the [[TWikiDocumentation#TWiki_Template_System][new template format]]. The safest way is to use the new templates as a base and to merge your changes back. Changes in new templates:
+			* Changed format from HTML to XHTML.
+d95 1
+a95 1
+		1. The Form Templates replace the <nop>TWikiCategoryTable:
+a97 2
+		1. __Merge the changes in your current template files into the new template files. To compare two files use
+		  <br> =diff -c $TWIKIROOT/templates.old/view.tmpl $TWIKIROOT/templates/view.tmpl | less=__
+a98 1
+		1. Restore any additional template subdirectories of your TWiki webs you might have and merge the changes.
+d101 1
+a101 1
+---+++ Step 5: Upgrade public files
+d103 3
+a105 6
+		1. Move the new =twiki/pub/TWiki= directory to your installation: ( =twiki/pub= )
+		  <br> =mv ~/tmp/pub/TWiki $TWIKIROOT/pub/=
+		1. Move the new =twiki/pub/twikilogo*= image files to your installation:
+		  <br> =mv ~/tmp/pub/twikilogo* $TWIKIROOT/pub=
+		  
+		* Pay attention to the file permissions of the =TWiki= directory and its subdirectory and files. The files must be writable by the CGI scripts (usually user "nobody").
+d107 1
+a107 1
+---+++ Step 6: Upgrade data files 
+d109 1
+a109 1
+		1. Move the new =twiki/data/TWiki= directory to your installation: ( =twiki/data= )
+a111 3
+		1. Optionally move the new =twiki/data/Test= directory to your installation,
+		  <br> =mv ~/tmp/data/Test $TWIKIROOT/data/=
+		  <br> (Pay attention to the file permissions)
+d116 1
+a116 3
+			* =WEBTOPICLIST= should use =WebChanges= for ="Changes"=, and =WebIndex= for ="Index"=:
+			  <br> =| &lt;a href="WebChanges"&gt;Changes&lt;/a&gt;=
+			  <br> =| &lt;a href="WebIndex"&gt;Index&lt;/a&gt;=
+@
+
+
+1.13
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999908646" format="1.0" version="1.13"}%
+d34 1
+a34 1
+	* *[[%TWIKIWEB%.FileAttachments][Attachments Under Revision Control]* Changes to files attached to topics - - are now tracked under revision control (RCS).
+d123 1
+a123 1
+		  * You may want to add =[ALLOW|DENY][WEB|TOPIC]RENAME= in some places, like  %TWIKIWEB%TWikiPreferences, WebPreferences and %MAINWEB%.TWikiUsers
+d129 1
+a129 1
+	* ExtendingTableSyntax: Enhanced table syntax might have unwanted side effect: ==| <nop>*bold*<nop> |== cells, ==|  center aligned  |== and ==|	right aligned |== cells, span multiple columns using ==| empty cells |||==. More in %TWIKIWEB%.TextFormattingRules.
+d151 1
+a151 1
+-- Main.JohnTalintyre - 18 Jul 2001 <br>	
+@
+
+
+1.12
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999857059" format="1.0" version="1.12"}%
+d6 1
+a6 1
+_Upgrading from the 01-Dec-2000 release to the new TWiki 01-Sep-2001_
+d10 1
+a10 1
+The latest version of TWiki (01-Sep-2001) involves several major new features and numerous enhancements of the last full version (01-Dec-2001). The file system set-up is almost identical, but much of the underlying data structure and processes are new. With all the changes, the upgrade procedure is straightforward, and your existing page data is imported directly. 
+d16 1
+a16 1
+	* __NOTE:__ To upgrade from a _pre-01-Dec-2000_ TWiki, start with	%TWIKIWEB%.TWikiUpgradeTo01Dec2000.
+d18 1
+a18 1
+	* To upgrade from a Beta of the new release, or if you've made custom modifications, read through the documentation and use the procedure below as a guideline.  
+d24 8
+a31 8
+	* *[[TWikiPlugins][TWiki Plugins]]* - Easily install program enhancements using external plug-in modules. Developers can create plug-ins in Perl, with the [[TWikiPlugins#PluginAPI][TWiki Plugin API]].
+		* *[[InterwikiPlugin][InterwikiPlugin]]* (preinstalled) - Link to external sites with text aliases, =SiteAlias:Page=; rules are defined in InterWikis. (Get more Plugins from the TWiki:Plugins web.) 
+	* *[[TWikiTemplateSystem][TWikiTemplateSystem]]* - New, more flexible template system.
+	* *[[TWikiSkins][TWikiSkins]]* - Overwrite template headers and footers; page content is unaffected. 
+	* *[[TWikiMetaData][TWikiMetaData]]* - New data format 
+	* *[[TWikiFormTemplate][TWikiFormTemplate]]* - Create multiple input forms per web; data is rendered in HTML tables.
+	* *[[ManagingTopics][Rename/move/delete topics]]* Individual pages can be managed  through the browser. Deleted topics are stored in a common Trash web.
+	* *[[TWikiUserAuthentication#ChangingPasswords][Change passwords]]* Change and reset passwords using forms 
+d33 2
+a34 2
+	* *ArbitraryTextForWikiWordLinks* - Text formatting rules to form links from any combination of words and spaces.
+	* *AttachmentsUnderRevisionControl* Changes to files attached to topics - FileAttachments - are now tracked under revision control (RCS).
+d36 1
+a36 1
+	* *HierarchicalNavigation*
+d81 7
+d90 1
+d122 10
+d133 12
+d148 4
+@
+
+
+1.11
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999769010" format="1.0" version="1.11"}%
+d4 1
+a4 1
+---## TWiki Upgrade Guide
+d8 1
+a8 1
+---+++ Overview
+d12 1
+a12 1
+---+++ Upgrade Requirements
+d20 1
+a20 1
+---+++ Major Changes from TWiki 01-Dec-2000
+d40 1
+a40 1
+---+++ Standard Upgrade Procedure
+d44 1
+a44 1
+---++++ Step 1: Backup & Unpack
+d53 1
+a53 1
+---++++ Step 2: Upgrade TWiki document files 
+d61 1
+a61 1
+---++++ Step 3: Upgrade CGI scripts
+d75 1
+a75 1
+---++++ Step 4: Upgrade template files 
+d86 1
+a86 1
+---++++ Step 5: Upgrade public files
+d95 1
+a95 1
+---++++ Step 6: Upgrade data files 
+d115 1
+a115 1
+---+++ Known Upgrade Issues
+@
+
+
+1.10
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999755435" format="1.0" version="1.10"}%
+d6 1
+a6 1
+_Upgrading from the TWiki 01-Dec-2000 to the new 01-Sep-2001 release_
+d10 1
+a10 1
+The latest version of TWiki (01-Sep-2001) involves several major new features and numerous enhancements from the last full version (01-Dec-2001). The file system set-up is almost identical, but much of the underlying data structure and procedures are new. With all the changes, the upgrade procedure is straightforward, and your existing page data is imported directly. 
+d12 1
+a12 1
+---+++ Upgrade Requirements for TWiki 01-Sep-2001 
+d40 1
+a40 1
+---+++ Six-Step Standard Upgrade
+@
+
+
+1.9
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999507440" format="1.0" version="1.9"}%
+d6 1
+a6 1
+Upgrade application and content from last official release 01-Dec-2000 to current 01-Sep-2001
+d10 1
+a10 1
+Major changes, numerous enhancements, basic structure similar.... Beta on their own...easy. Upgrade involves a changing and merging of files and configs...
+d14 5
+a18 2
+Upgrade from your 01-Dec-2000 edition to the new, next generation *01-Sep-2001* TWiki Production Release in a few straightforward steps.
+	* To upgrade from a pre-01-Dec-2000 TWiki, make this your first stop: %TWIKIWEB%.TWikiUpgradeTo01Dec2000.
+d22 1
+a22 1
+The 01 Sep 2001 release includes several new areas of functionality, and existing features have been significantly revised and enhanced. These changes affect the upgrade of the 01 Dec 2000 version:
+d24 12
+a35 13
+	* *TWikiPlugins* major enhancement, allows easy installation and removal of program enhancements using external plug-in modules, standardized creation of Plugins with the Plugins API
+		* *InterWikisPlugin* - preinstalled
+	* *AttachmentsUnderRevisionControl* In the previous version, changes to topics were tracked under revision control (RCS); now, topic Attachments are also tracked.
+	* *ManagingTopics/Move/Delete Topic* In the previous version, managing topics required access to the TWiki file system (Telnet or FTP); now, moving, renaming, deleting can be done through the browser. Deleted topics are act move and stored in a common Trash web.
+	* *TOC (Table of Contents)* Automatically generates a hierarchical Table of Contents from topic headings: &lt;HI&gt;...&lt;H6&gt;. Set depth...
+	* *ArbitraryTextForWikiWordLinks*
+	* *ChangingPasswords* done by Web form
+	* *TWikiFormTemplate* 
+	* *TWikiTemplateSystem* all new template set-up
+	* *TWikiSkins* 
+	* *SuperAdminCanEdit*
+	* *TWikiMetaData* 
+	* *ConvertToXHTML10*
+d38 1
+a38 1
+The TWiki directory structure remains the same, with one exception, the new ==lib/TWiki/Plugins== directory tree to for the main configuration file, library, internal modules and the new Plugin modules. Pre-existing files were formerly in ==bin==.
+d42 1
+a42 1
+Follow this step-by-step guide to upgrade the 01 Dec 2000 version to the 01 Sep 2001 release, and transfer all of your original data: [ We assume =export TWIKIROOT=/some/dir/= ]
+a43 1
+<blockquote>
+d46 1
+a46 1
+	1 __Backup__ all existing TWiki directories ( =bin=, =pub=, =data=, =templates= )
+d48 1
+a48 1
+	* __Unpack the zip file__ into some working directory:
+d55 1
+a55 1
+		* Move the document files to your TWiki root: ( =twiki= )
+d57 1
+d59 1
+d61 1
+a61 1
+---++++ Step 3: Upgrade cgi-bin scripts
+d63 1
+a63 1
+		* Rename your original =twiki/bin= directory: ( =twiki/bin= )
+d65 1
+a65 1
+		* Move the new scripts to your original =twiki/bin= location, i.e.
+d67 1
+a67 1
+		* Merge the changes in your current =wikicfg.pm= into the new =wikicfg.pm=. We suggest using =diff -c= to compare the two files if you have made heavy changes to the file, i.e.
+d69 1
+a69 1
+		* Restore any additional scripts you might have from the old directory, i.e.
+d71 2
+a72 4
+		  <br> (Note that the =changes= script is obsolete.)
+		* In case you have basic authentication:
+			* The =TWikiRegistration= topic moved from the TWiki.Main web to the TWiki.TWiki web. Change =.htaccess= to reflect the new location, i.e.
+			 <br> =ErrorDocument 401 /cgi-bin/view/TWiki/TWikiRegistration=
+a73 1
+		* Test your TWiki installation if you can view topics. (Ignore the =%<nop>HTTP_EQUIV_ON_VIEW%= you see on top of the topic; this will disappear after upgrading the template files.
+d77 1
+a77 1
+		* Rename your original =twiki/templates= directory: ( =twiki/templates= )
+d79 1
+a79 1
+		* Move the new templates to your original =twiki/templates= location, i.e.
+d81 4
+a84 4
+		* Merge the changes in your current template files into the new template files. To compare two files use
+		  <br> =diff -c $TWIKIROOT/templates.old/view.tmpl $TWIKIROOT/templates/view.tmpl | less=
+		* Restore any additional template subdirectories of your TWiki webs you might have and merge the changes.
+		* Test your TWiki installation if you can view topics.
+d86 3
+a88 2
+---++++ Step 5: Upgrade public files 
+		* Move the new =twiki/pub/TWiki= directory to your installation: ( =twiki/pub= )
+d90 4
+a93 3
+		* Pay attention to the file permissions of the =TWiki= directory and its subdirectory and files. The files must be writable by the cgi-scripts (usually user "nobody")
+		* Move the new =twiki/pub/twikilogo*= image files to your installation, i.e.
+		  <br> =mv ~/tmp/pub/twikilogo* $TWIKIROOT/pub/=
+d96 2
+a97 1
+		* Move the new =twiki/data/TWiki= directory to your installation: ( =twiki/data= )
+d100 1
+a100 1
+		* Optionally move the new =twiki/data/Test= directory to your installation, i.e.
+d103 5
+a107 13
+		* Move these new TWiki.Main web topics to your TWiki.Main web: =TWikiGroups=, =TWikiAdminGroup=, and if needed also =OfficeLocations= , i.e.
+		  <br> =mv ~/tmp/data/Main/TWikiGroups.* $TWIKIROOT/data/Main=
+		  <br> (Pay attention to the file permissions)
+		* __The following topics in the TWiki.Main web are obsolete and can be deleted: =BillClinton=, =GoodStyle=, =RegularExpression=, =TextFormattingFAQ=, =TextFormattingRules=, =ManagingWebs=, =TWikiCategoryTable=, =TWikiEnhancementRequests=, =TWikiImplementationNotes=, =TWikiInstallationGuide=, =WebNotification=, =TWikiPlannedFeatures=, =TWikiUpgradeTo01May2000=, =TWikiUsernameVsLoginUsername=, =TWikiSite=, =WelcomeGuest=, =WelcomeVisitor=, =WikiName=, =WikiNotation=, =WikiTopic=, =WikiWikiClones=. Sample delete command:+__
+		  <br> =rm -f $TWIKIROOT/data/Main/BillClinton.*=
+		* The following topics are new and most be copied to all of your TWiki webs: =WebChanges=, =WebIndex=.
+		  <br> =cp -p $TWIKIROOT/data/TWiki/WebChanges.txt* $TWIKIROOT/data/Main=
+		  <br> =cp -p $TWIKIROOT/data/TWiki/WebIndex.txt* $TWIKIROOT/data/Main=
+		  <br> Repeat this for all your webs. Pay attention to the file permissions.
+		* =TWikiRegistration= moved from TWiki.Main to TWiki.TWiki. In case you customized =TWikiRegistration= , merge your changes back into =TWiki.TWikiRegistration= , then delete =$TWIKIROOT/data/Main/TWikiRegistration*=.
+		* =TWikiPreferences= moved from TWiki.Main to TWiki.TWiki. Merge your changes to =TWikiPreferences= into =TWiki.TWikiPreferences=.
+		* Modify the =WebPreferences= topics in all your webs to reflect the following:
+			* =WEBTOPICLIST= should use =WebChanges= for ="Changes"=, and =WebIndex= for ="Index"=, i.e.
+d112 2
+a113 16
+		* The =WebSearch= topic has considerable changes. Copy the one from =TWiki.TWiki= into all webs, or merge them if you made changes. To copy, do an edit-copy-edit-paste operation.
+		* Change the =WebHome= topics in all your webs to reflect these changes:
+			1. The "Changes" link should point to =WebChanges=.
+			2. The "Topic index" link should point to =WebIndex=.
+			3. Change the include of the web table to =%<nop>INCLUDE{"%<nop>TWIKIWEB%.TWikiWebsTable"}%=
+		* Merge your =TWikiWebsTable= topic in TWiki.Main with the =TWikiWebsTable= topic in TWiki.TWiki. Note the new variable to query the color of a web. Delete the old =TWikiWebsTable= topic in TWiki.Main after merge is complete.
+		* The following topics in the TWiki.Main web are deprecated (because they moved to TWiki.TWiki), but still need to be present in TWiki.Main because of existing links to them: =FileAttachment=, =TWikiDocumentation=, =TWikiHistory=, =TWikiPreferences=, =TWikiVariables=.
+		  <br> It is recommended that you edit these topics in TWiki.Main and replace the content with this line:
+		  <br> =This topic moved to %<nop>TWIKIWEB%.%<nop>TOPIC% in the %<nop>WIKITOOLNAME%.%<nop>TWIKIWEB% web.=
+		* In all your webs, change references to topics that moved to the TWiki.TWiki web:
+			* Change topics: =TWikiUsers= , =WebNotify= , =WebHome=
+			* With links to: =TWikiPreferences= , =TWikiVariables= , =TWikiUsers= , =TWikiWebsTable= and =WelcomeGuest=
+
+---+++ Setting Access Control
+
+		* Read TWikiAccessControl, in case you want to use the new authorization feature based on groups.
+a117 3
+</blockquote>
+
+-- MikeMannix - 26 Aug 2001 <br>
+@
+
+
+1.8
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999329908" format="1.0" version="1.8"}%
+d6 7
+a12 1
+---+++ Upgrading to TWiki 01-Sep-2001 
+d15 1
+d17 1
+a17 1
+---+++ Major Changes from 01-Dec-2000
+d22 1
+d27 1
+a27 1
+	* *ChangingTWikiPasswords* done by Web form
+d38 1
+a38 7
+---+++ Picking the Right Upgrade Path
+
+Check these to make sure you're on the right page:
+	* If you've updated, replaced, or even added files from any of this year's Beta test releases of the new TWiki, head here: %TWIKIWEB%.TWikiBetaUpgradeNotes.
+	* To upgrade from a pre-01-Dec-2000 TWiki, make this your first stop: %TWIKIWEB%.TWikiUpgradeTo01Dec2000.
+
+---+++ Standard Six-Step Upgrade
+d103 1
+a103 1
+		* The following topics in the TWiki.Main web are obsolete and can be deleted: =BillClinton=, =GoodStyle=, =RegularExpression=, =TextFormattingFAQ=, =TextFormattingRules=, =ManagingWebs=, =TWikiCategoryTable=, =TWikiEnhancementRequests=, =TWikiImplementationNotes=, =TWikiInstallationGuide=, =WebNotification=, =TWikiPlannedFeatures=, =TWikiUpgradeTo01May2000=, =TWikiUsernameVsLoginUsername=, =TWikiSite=, =WelcomeGuest=, =WelcomeVisitor=, =WikiName=, =WikiNotation=, =WikiTopic=, =WikiWikiClones=. Sample delete command:
+@
+
+
+1.7
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999319954" format="1.0" version="1.7"}%
+d16 1
+a16 1
+	* *RenameTopic/Move/Delete Topic* In the previous version, managing topics required access to the TWiki file system (Telnet or FTP); now, moving, renaming, deleting can be done through the browser. Deleted topics are act move and stored in a common Trash web.
+d101 1
+a101 1
+		* The following topics in the TWiki.Main web are obsolete and can be deleted: =BillClinton=, =GoodStyle=, =RegularExpression=, =TextFormattingFAQ=, =TextFormattingRules=, =TWikiAdministration=, =TWikiCategoryTable=, =TWikiEnhancementRequests=, =TWikiImplementationNotes=, =TWikiInstallationGuide=, =TWikiNotificationOfChanges=, =TWikiPlannedFeatures=, =TWikiUpgradeTo01May2000=, =TWikiUsernameVsLoginUsername=, =TWikiSite=, =WelcomeGuest=, =WelcomeVisitor=, =WikiName=, =WikiNotation=, =WikiTopic=, =WikiWikiClones=. Sample delete command:
+a137 1
+%META:TOPICMOVED{by="MikeMannix" date="999319954" from="TWiki.TWikiUpgradeNotes" to="TWiki.TWikiUpgradeGuide"}%
+@
+
+
+1.6
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999297968" format="1.0" version="1.6"}%
+a8 1
+<blockquote>
+d36 1
+a36 1
+---+++ Standard 6-Step Full Upgrade
+d101 1
+a101 1
+		* The following topics in the TWiki.Main web are obsolete and can be deleted: =BillClinton=, =GoodStyle=, =RegularExpression=, =TextFormattingFAQ=, =TextFormattingRules=, =TWikiAdministration=, =TWikiCategoryTable=, =TWikiEnhancementRequests=, =TWikiImplementationNotes=, =TWikiInstallationNotes=, =TWikiNotificationOfChanges=, =TWikiPlannedFeatures=, =TWikiUpgradeTo01May2000=, =TWikiUsernameVsLoginUsername=, =TWikiSite=, =WelcomeGuest=, =WelcomeVisitor=, =WikiName=, =WikiNotation=, =WikiTopic=, =WikiWikiClones=. Sample delete command:
+d138 1
+@
+
+
+1.5
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999190287" format="1.0" version="1.5"}%
+a9 4
+	* *BUT FIRST!* Check these to make sure you're on the right page:
+		* If you've updated, replaced, or even added files from any of this year's Beta test releases of the new TWiki, head here: %TWIKIWEB%.TWikiBetaUpgradeNotes.
+		* To upgrade from a pre-01-Dec-2000 TWiki, make this your first stop: %TWIKIWEB%.TWikiUpgradeTo01Dec2000.
+</blockquote>
+d11 1
+a11 1
+---+++ Major Changes from Dec 2000
+d30 8
+a37 2
+ 
+---+++ Upgrading the Site
+d129 1
+a129 1
+---+++ TWiki Access Control
+d133 1
+a133 1
+---+++ Known Issues
+d137 1
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999166913" format="1.0" version="1.4"}%
+d4 1
+a4 1
+---## TWiki Upgrade Notes
+d19 1
+a19 1
+	* *TWikiPlugins* major enhancement, allows easy installation and removal of program enhancements using external plug-in modules
+d21 2
+a22 2
+	* *RenameTopic/MoveTopic* In the previous version, renaming topics and moving topics between webs could not be done through the browser interface, it required access to the TWiki installtion files; now, moving and renaming is available from the lower toolbar.
+	* *SectionTitles and TOC*
+d24 4
+a27 2
+	* *ChangingTWikiPasswords*
+	* *FormTemplateSystem*
+d29 1
+d32 2
+a33 1
+	* *TWiki standard directory structure*: The basic directory layout remains the same, with the addition of one new ==lib/TWiki/Plugins== directory to handle internal modules and the new Plugin modules
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 2
+%META:TOPICINFO{author="MikeMannix" date="999032437" format="1.0" version="1.3"}%
+%META:TOPICPARENT{name="TWikiDocumentation"}%
+d96 1
+a96 1
+		* The following topics in the TWiki.Main web are obsolete and can be deleted: =BillClinton=, =GoodStyle=, =RegularExpression=, =TextFormattingFAQ=, =TextFormattingRules=, =TWikiAdministration=, =TWikiCategoryTable=, =TWikiEnhancementRequests=, =TWikiImplementationNotes=, =TWikiInstallationNotes=, =TWikiNotificationOfChanges=, =TWikiPlannedFeatures=, =TWikiUpgradeTo01May2000=, =TWikiUsernameVsLoginUsername=, =TWikiWeb=, =WelcomeGuest=, =WelcomeVisitor=, =WikiName=, =WikiNotation=, =WikiTopic=, =WikiWikiClones=. Sample delete command:
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="998886734" format="1.0" version="1.2"}%
+d18 1
+a18 3
+The 01 Sep 2001 release has these changes that affect the upgrade of the 01 Dec 2000 version:
+
+	* Everything's been rewritten - you won't recognize a thing! (not)
+d20 12
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="998728817" format="1.0" version="1.1"}%
+d3 2
+d7 10
+a16 1
+If you are coming from a version earlier than the 01 Dec 2000 production release, please see TWikiUpgradeTo01Dec2000 first.
+d20 5
+a24 1
+	* 
+d26 2
+a27 1
+These are the steps you need to perform to upgrade the 01 Dec 2000 version to the 01 Sep 2001 release: [ We assume =export TWIKIROOT=/some/dir/= ]
+d29 1
+a29 1
+	* __Backup__ all existing TWiki directories ( =bin=, =pub=, =data=, =templates= )
+d36 3
+a38 2
+	* __Upgrade the TWiki document files__ ( =twiki= )
+		* Move the document files to your TWiki root, i.e.
+d42 3
+a44 2
+	* __Upgrade cgi-bin scripts__ ( =twiki/bin= )
+		* Rename your original =twiki/bin= directory, i.e.
+d59 3
+a61 2
+	* __Upgrade template files__ ( =twiki/templates= )
+		* Rename your original =twiki/templates= directory, i.e.
+d70 2
+a71 2
+	* __Upgrade public files__ ( =twiki/pub= )
+		* Move the new =twiki/pub/TWiki= directory to your installation, i.e.
+d77 2
+a78 2
+	* __Upgrade data files__ ( =twiki/data= )
+		* Move the new =twiki/data/TWiki= directory to your installation, i.e.
+d114 2
+a115 1
+	* __TWiki Access Control__
+d118 1
+a118 2
+	* __Known Issues__
+		* Check http://TWiki.org/cgi-bin/view/Codev/KnownIssuesOfTWiki01Sep2001 for known issues of TWiki 01 Sep 2001 (production release) 
+d120 3
+a122 1
+-- PeterThoeny - 25 Aug 2001 <br />
+@

@@ -1,0 +1,63 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.00.05.52;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.08.28.07.56.53;	author NicholasLee;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042329952" format="1.0" version="1.2"}%
+Nicholas is a TWiki:Codev/CoreTeam member. See home page at TWiki:Main/NicholasLee
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 21
+	* Name: Nicholas Lee
+	* Login Name: NicholasLee
+	* Email: nj.lee@@plumtree.co.nz
+	* Phone: 
+	* Department: 
+	* Location: (Please specify office location)
+	* Comment: 
+
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Horizontal size of text edit box:
+		* Set EDITBOXWIDTH = 120
+	* Vertical size of text edit box:
+		* Set EDITBOXHEIGHT = 28
+	* Default state of the __link__ check box in the attach file page:
+		* Set ATTACHLINKBOX = 
+
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* %WIKIUSERSTOPIC% has a list of other TWiki users.
+@

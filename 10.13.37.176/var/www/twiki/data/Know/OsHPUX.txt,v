@@ -1,0 +1,47 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2000.08.19.01.16.44;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.05.41.22;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@*Operating System: <nop>HP-UX*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsHPUX">Search</A></B> all *_HP-UX_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d6 1
+a6 1
+%INCLUDE{"OperatingSystem.txt"}%
+@

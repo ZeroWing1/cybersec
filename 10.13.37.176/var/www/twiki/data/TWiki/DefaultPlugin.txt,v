@@ -1,0 +1,188 @@
+head	1.5;
+access;
+symbols;
+locks
+	nobody:1.5; strict;
+comment	@# @;
+
+
+1.5
+date	2002.01.05.08.30.04;	author PeterThoeny;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.18.04.24.49;	author MikeMannix;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.07.14.08.53.47;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.09.08.53.42;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.03.14.02.20.13;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.5
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1010219404" format="1.0" version="1.5"}%
+---++ Default TWiki Plugin
+
+The default plugin is used for some deprecated rendering of older TWiki versions and of <nop>JosWiki. This plugin can also be used to specify some simple custom rendering rules. __Note:__ Create a new [[%TWIKIWEB%.TWikiPlugins][TWikiPlugin]] based on EmptyPlugin if you plan to offer some complex rendering or other functionality.
+
+---+++ Syntax Rules
+
+Custom rendering rules of the default plugin:
+
+	* Allow old include syntax ( ==%<nop>INCLUDE:"TopicName"%== ) if Plugin Preferences variable ==OLDINCLUDE== is set to ==1==
+	* Render deprecated ==*_text_*== as __bold italic__ text. Test if installed: *_This is bold italic_*
+	* Enable <nop>JosWiki rules if <nop>JosWiki specific code is uncommented
+
+Modify file ==TWiki/Plugins/DefaultPlugin.pm== to add your own rules or to enable <nop>JosWiki rules.
+
+---+++ <nop>%TOPIC% Settings
+
+Plugin settings are stored as preferences variables. To reference
+a plugin setting write ==%<nop>&lt;plugin&gt;_&lt;setting&gt;%==, for example, ==%<nop>DEFAULTPLUGIN_SHORTDESCRIPTION%==
+
+	* One line description, shown in the %TWIKIWEB%.TextFormattingRules topic:
+		* Set SHORTDESCRIPTION = This plugin can be used to specify some simple custom rendering rules. It also renders deprecated ==*_text_*== as __bold italic__ text.
+
+	* Allow deprecated ==%<nop>INCLUDE:"TopicName"%== syntax:
+		* Set OLDINCLUDE = 1
+
+	* Debug plugin: (See output in =data/debug.txt=)
+		* Set DEBUG = 0
+
+---+++ Plugin Installation Instructions
+
+	* This plugin is preinstalled, you do not need to install it.
+
+---+++ Plugin Info
+
+|  Plugin Author: | %TWIKIWEB%.AndreaSterbini, %TWIKIWEB%.PeterThoeny |
+|  Plugin Version: | 14 Jul 2001 |
+|  Change History: | 14 Jul 2001: Changed to plug&play <br> 27 Feb 2001: Initial version |
+|  CPAN Dependencies: | none |
+|  Other Dependencies: | none |
+|  Perl Version: | 5.0 |
+|  Plugin Home: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC% |
+|  Feedback: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Dev |
+
+__Related Topics:__ %TWIKIWEB%.TWikiPreferences, %TWIKIWEB%.TWikiPlugins, EmptyPlugin
+
+-- %TWIKIWEB%.AndreaSterbini - 27 Feb 2001 <br> 
+-- %TWIKIWEB%.PeterThoeny - 14 Jul 2001 <br>
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="1000787089" format="1.0" version="1.4"}%
+d19 1
+a19 1
+a plugin setting write ==%<nop>&lt;plugin&gt;_&lt;setting&gt;%==, i.e. ==%<nop>DEFAULTPLUGIN_SHORTDESCRIPTION%==
+d21 1
+a21 1
+	* One line description, is shown in the %TWIKIWEB%.TextFormattingRules topic:
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="995149252" format="1.0beta2" version="1.3"}%
+d4 1
+a4 1
+The default plugin is used for some depreciated rendering of older TWiki versions and of <nop>JosWiki. This plugin can also be used to specify some simple custom rendering rules. __Note:__ Create a new [[%TWIKIWEB%.TWikiPlugins][TWikiPlugin]] based on EmptyPlugin if you plan to offer some complex rendering or other functionality.
+d11 1
+a11 1
+	* Render depreciated ==*_text_*== as __bold italic__ text. Test if installed: *_This is bold italic_*
+d22 1
+a22 1
+		* Set SHORTDESCRIPTION = This plugin can be used to specify some simple custom rendering rules. It also renders depreciated ==*_text_*== as __bold italic__ text.
+d24 1
+a24 1
+	* Allow depreciated ==%<nop>INCLUDE:"TopicName"%== syntax:
+a28 1
+
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{version="1.2" date="994668822" author="PeterThoeny" format="1.0beta2"}%
+d16 1
+a16 1
+---+++ <nop>%TOPIC% Preferences
+d18 2
+a19 2
+Plugin preferences are stored as preferences variables. To reference
+a plugin preference write ==%<nop>&lt;plugin&gt;_&lt;preference&gt;%==, i.e. ==%<nop>DEFAULTPLUGIN_SHORTDESCRIPTION%==
+d21 1
+a21 1
+	* One line description, is included in the %TWIKIWEB%.TextFormattingRules topic:
+d23 1
+d27 4
+d38 2
+a39 2
+|  Plugin Version: | 08 Jul 2001 |
+|  Change History: | 08 Jul 2001: Changed to plug&play <br> 27 Feb 2001: Initial version |
+d49 1
+a49 1
+-- %TWIKIWEB%.PeterThoeny - 08 Jul 2001 <br>
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 1
+*Default TWiki Plugin*
+d4 3
+a6 1
+The default plugin is used for some depreciated rendering of older TWiki versions and of <nop>JosWiki. This plugin can also be used to specify some simple custom rendering rules. __Note:__ Create a new [[TWikiPlugins][TWikiPlugin]] based on EmptyPlugin if you plan to offer some complex rendering or functions.
+d10 1
+a10 1
+	* Allow old include syntax ( ==%<nop>INCLUDE:"TopicName"%== ) if TWikiPreferences variable ==DEFAULTPLUGIN_OLDINCLUDE== is set to ==1==
+d16 26
+a41 1
+__Related Topics:__ TWikiPreferences, TWikiPlugins, EmptyPlugin
+d43 2
+a44 1
+-- Main.PeterThoeny - 13 Mar 2001 <br>
+@

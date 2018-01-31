@@ -1,0 +1,949 @@
+<html><head>
+<title>TWikiHistory</title>
+</head><body bgcolor="#ffffff">
+<p />
+<ul>
+<li> <a href="#Appendix_B_TWiki_Development_Tim">Appendix B: TWiki Development Timeline</a>
+<ul>
+<li> <a href="#01_Feb_2003_Release_Beijing_">01-Feb-2003 Release (Beijing)</a>
+</li>
+<li> <a href="#01_Dec_2001_Release_Athens_">01-Dec-2001 Release (Athens)</a>
+</li>
+<li> <a href="#01_Sep_2001_Release">01-Sep-2001 Release</a>
+</li>
+<li> <a href="#01_Dec_2000_Release">01-Dec-2000 Release</a>
+</li>
+<li> <a href="#01_May_2000_Release">01-May-2000 Release</a>
+</li>
+<li> <a href="#01_Sep_1999_Release">01-Sep-1999 Release</a>
+</li>
+<li> <a href="#01_Jul_1999_Release">01-Jul-1999 Release</a>
+</li>
+<li> <a href="#1998_Releases">1998 Releases</a>
+</li>
+<li> <a href="#Dev_Flow">Dev Flow</a>
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h1><a name="Appendix_B_TWiki_Development_Tim"> Appendix B: TWiki Development Timeline </a></h1>
+<p />
+<h2><a name="01_Feb_2003_Release_Beijing_"> 01-Feb-2003 Release (Beijing) </a></h2>
+<p />
+<ul>
+<li> <strong>18 Jan 2003</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Support for <code>/bin/view/Web.TopicName</code> topic view URL (besides the default <code>/bin/view/Web/TopicName</code> URL); useful for <a href="http://TWiki.org/cgi-bin/view/TWiki/InterwikiPlugin">InterwikiPlugin</a> links like <a href="http://twiki.org/cgi-bin/view/Codev.ReadmeFirst" title="'Codev.ReadmeFirst' on TWiki site, we know it!">TWiki:Codev.ReadmeFirst</a>
+</li>
+</ul>
+</li>
+<li> <strong>31 Dec 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Enhanced Plugin API to manipulate topic data with new functions in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiFuncModule">TWikiFuncModule</a>: <code>readTopicText</code>, <code>saveTopicText</code>, <code>setTopicEditLock</code>, <code>checkTopicEditLock</code>
+</li>
+</ul>
+</li>
+<li> <strong>31 Dec 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%NOAUTOLINK%</code> setting in the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> to disable the auto-linking of <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a>
+</li>
+</ul>
+</li>
+<li> <strong>29 Dec 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/SvenDowideit">SvenDowideit</a>
+<ul>
+<li> New Plugin hooks <code>registrationHandler</code>, <code>beforeEditHandler</code>, <code>afterEditHandler</code>, <code>beforeSaveHandler</code>, <code>writeHeaderHandler</code>, <code>redirectCgiQueryHandler</code>, <code>getSessionValueHandler</code>, <code>setSessionValueHandler</code>
+</li>
+</ul>
+</li>
+<li> <strong>30 Nov 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>
+<ul>
+<li> Internationalization ('I18N') support 8-bit character sets in <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a>, such as ISO-8859-15, KOI8-R
+</li>
+</ul>
+</li>
+<li> <strong>25 Nov 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Include previous topic revision with <code>%INCLUDE{ "OtherTopic" rev="1.2" }%</code>
+</li>
+</ul>
+</li>
+<li> <strong>15 Nov 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> The Go box understands also URLs, useful for special <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">TWikiSkins</a> handling
+</li>
+</ul>
+</li>
+<li> <strong>08 Nov 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/ColasNahaboo">ColasNahaboo</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>
+<ul>
+<li> In <a href="http://TWiki.org/cgi-bin/view/TWiki/WebNotify">WebNotify</a>, if only the <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> is specified, the e-mail is taken from the user's home page; if the <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> is a group name, a notification is sent to all members of the group
+</li>
+</ul>
+</li>
+<li> <strong>30 Oct 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%NOP{}%</code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a> topic gets removed at topic creation time; useful to write protect template topics
+</li>
+</ul>
+</li>
+<li> <strong>28 Sep 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> The <code>%URLPARAM{}%</code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a> topic gets expanded at topic creation time; useful for dynamic content creation
+</li>
+</ul>
+</li>
+<li> <strong>28 Sep 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>$logDir</code> introduced in TWiki.cfg to set the log directory
+</li>
+</ul>
+</li>
+<li> <strong>13 Sep 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Renamed the <strong>Test</strong> web to <strong>Sandbox</strong>
+</li>
+</ul>
+</li>
+<li> <strong>03 Aug 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>
+<ul>
+<li> New <code>setlib.cfg</code> file in the bin directory to set the TWiki library path
+</li>
+</ul>
+</li>
+<li> <strong>02 Aug 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/RyanFreebern">RyanFreebern</a>
+<ul>
+<li> Support for outbound HTTP proxy when including URLs based on new <code>%PROXYHOST</code> and <code>%PROXYPORT%</code> settings in the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>
+</li>
+</ul>
+</li>
+<li> <strong>12 Jul 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> The page logo is configurable with new <code>%WIKILOGOIMG%</code>, <code>%TWIKILOGOURL%</code> and <code>%WIKILOGOALT%</code> variables in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>; replacing <code>$wikiHomeUrl</code> in TWiki.cfg
+</li>
+</ul>
+</li>
+<li> <strong>12 Jun 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%WIKITOOLNAME%</code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>; replacing <code>$wikiToolName</code> in TWiki.cfg
+</li>
+</ul>
+</li>
+<li> <strong>31 May 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%EDITBOXSTYLE%</code> preferences variable which sets the edit box width automatically to the window width
+</li>
+</ul>
+</li>
+<li> <strong>17 May 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%URLENCODE{}%</code> variable to encodes a string for using in a URL parameter, e.g. <code>%URLENCODE{"spaced name"}%</code> returns <code>spaced%20name</code>
+</li>
+</ul>
+</li>
+<li> <strong>17 May 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a> can be nested
+</li>
+</ul>
+</li>
+<li> <strong>05 May 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New user home pages are now based on the <a href="http://TWiki.org/cgi-bin/view/TWiki/NewUserTemplate">NewUserTemplate</a>, replacing the <code>/twiki/templates/register.tmpl</code> template file
+</li>
+</ul>
+</li>
+<li> <strong>26 Apr 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New markup to exclude heading from a <code>%TOC%</code> table of content, e.g. <code>---+!! This heading</code> is not shown in a TOC
+</li>
+</ul>
+</li>
+<li> <strong>13 Apr 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Form and script to create new webs, see <a href="http://TWiki.org/cgi-bin/view/TWiki/ManagingWebs">ManagingWebs</a>
+</li>
+</ul>
+</li>
+<li> <strong>01 Apr 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> New data storage framework that lets you use external RCS commands for revision control, or a new native Perl implementation that does not depend on the external RCS commands
+</li>
+</ul>
+</li>
+<li> <strong>28 Mar 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed IE5/IE6-specific problem whereby going back from preview sometimes removes all edit changes
+</li>
+</ul>
+</li>
+<li> <strong>23 Mar 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> New AND search; with regular expression enabled, use the semicolon ";" as the AND operator in <code>%SEARCH{}%</code> variable, <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a> and <a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">WebSearch</a>
+</li>
+</ul>
+</li>
+<li> <strong>21 Mar 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/ColasNahaboo">ColasNahaboo</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>
+<ul>
+<li> Fixed cache issue where the edit page showed outdated content
+</li>
+</ul>
+</li>
+<li> <strong>06 Mar 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/RichardDonkin">RichardDonkin</a>
+<ul>
+<li> Improved statistics script which uses less memory to process large log files
+</li>
+</ul>
+</li>
+<li> <strong>09 Jan 2002</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Variables inside <code>&lt;verbatim&gt;</code> tags are no longer expanded
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_Dec_2001_Release_Athens_"> 01-Dec-2001 Release (Athens) </a></h2>
+<p />
+<ul>
+<li> <strong>25 Oct 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a> to <code>%SEARCH{}%</code> variable for database like reporting.
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_Sep_2001_Release"> 01-Sep-2001 Release </a></h2>
+<p />
+<ul>
+<li> <strong>30 Aug 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Easier install for Windows, including auto detection in <code>TWiki.cfg</code>
+</li>
+</ul>
+</li>
+<li> <strong>30 Aug 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Ability to move attachments between topics, see <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a> 
+</li>
+</ul>
+</li>
+<li> <strong>21 Aug 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Convert to XHTML 1.0 function: first step to XHTML-ifying TWiki
+</li>
+</ul>
+</li>
+<li> <strong>26 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Category information to forms using the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a> format, see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a>
+</li>
+</ul>
+</li>
+<li> <strong>07 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New topic templates as topics instead of templates. Customize by editing the topic. Retired <code>notedited.tmpl</code>, <code>notext.tmpl</code> and <code>notwiki.tmpl</code> templates. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%TOPICLIST{"format"}%</code> and <code>%WEBLIST{"format"}%</code> variables to get a formatted topic index and web index, respectively. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>01 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%URLPARAM{"name"}%</code> variable to query URL parameters. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>01 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>
+<ul>
+<li> API to extend TWiki, see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPlugins#PluginAPI">TWikiPluginAPI</a> 
+</li>
+</ul>
+</li>
+<li> <strong>01 Jun 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/KlausWriessnegger">KlausWriessnegger</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>
+<ul>
+<li> Forms to change/reset/install passwords, see <a href="http://TWiki.org/cgi-bin/view/TWiki/ChangePassword">ChangePassword</a> &amp; <a href="http://TWiki.org/cgi-bin/view/TWiki/ResetPassword">ResetPassword</a>
+</li>
+</ul>
+</li>
+<li> <strong>01 May 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>
+<ul>
+<li> The <a href="http://TWiki.org/cgi-bin/view/Main/TWikiAdminGroup">TWikiAdminGroup</a> (or other group) can be enabled as a <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl#SuperAdminGroup">SuperAdminGroup</a>. Members have browser edit access to <em>all</em> locked topics. 
+</li>
+</ul>
+</li>
+<li> <strong>01 May 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Meta information format, see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a>
+</li>
+</ul>
+</li>
+<li> <strong>01 May 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Attachment under revision control See <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachment</a> 
+</li>
+</ul>
+</li>
+<li> <strong>01 May 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a>
+<ul>
+<li> Ability to rename/move topics, <a href="http://TWiki.org/cgi-bin/view/TWiki/ManagingTopics">ManagingTopics</a>
+</li>
+</ul>
+</li>
+<li> <strong>27 Mar 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> The table syntax has been enhanced to (i) render <code><b>| *bold* |</b></code> cells as table headers, (ii) render space padded cells <code><b>| &nbsp; center aligned &nbsp; |</b></code> and <code><b>| &nbsp; right aligned |</b></code>, (iii) span multiple columns using <code><b>| empty cells |||</b></code>. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingRules">TextFormattingRules</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>25 Mar 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Security fix Questionable files like PHP scripts (executables) and <code><b>.htaccess</b></code> files that are attached to a topic get a <code><b>.txt</b></code> suffix appended to the file name. See also <a href="http://twiki.org/cgi-bin/view/Codev/FileAttachmentFilterSecurityAlert" title="'Codev/FileAttachmentFilterSecurityAlert' on TWiki site, we know it!">TWiki:Codev/FileAttachmentFilterSecurityAlert</a> 
+</li>
+</ul>
+</li>
+<li> <strong>28 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New Wiki rule for headings, i.e. <code>---++ My Title</code>; and new <code>%TOC%</code> variable to build a table of content from headings in a topic. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>28 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New Wiki rule to specify arbitrary text for external links (i.e. <code>[[http://TWki.org][TWiki]]</code>) and internal links (i.e <code>[[WikiSyntax][syntax]]</code>). More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>28 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New Wiki rule for named anchors, e.g. links within a topic. Define a named anchor with <code>#MyAnchor</code> at the beginning of a line, and link to it with <code>[[#MyAnchor]]</code>. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>25 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/NicholasLee">NicholasLee</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Use <code>Net::SMTP</code> module instead of <code>sendmail</code> if installed. 
+</li>
+</ul>
+</li>
+<li> <strong>01 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added <code>&lt;verbatim&gt;</code> ... <code>&lt;/verbatim&gt;</code> tags to show source code "as is". Unlike the <code>&lt;pre&gt;</code> ... <code>&lt;/pre&gt;</code> tags, it also shows <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> characters "as is". 
+</li>
+</ul>
+</li>
+<li> <strong>01 Feb 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed <a href="http://twiki.org/cgi-bin/view/Codev/CreateLinkToAttachedFileBug" title="'Codev/CreateLinkToAttachedFileBug' on TWiki site, we know it!">TWiki:Codev/CreateLinkToAttachedFileBug</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>21 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added a "Minor change, don't notify" checkbox in preview. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/DontNotify">DontNotify</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>21 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added Bold Fixed formatting using double-equal signs, e.g. write <code>==Bold Fixed==</code> to get <code><b>Bold Fixed</b></code>. 
+</li>
+</ul>
+</li>
+<li> <strong>20 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Format changed of <code>%GMTIME{"..."}%</code> and <code>%SERVERTIME{"..."}%</code> variables. Format is now <code>"$hour:$min"</code> instead of <code>"hour:min"</code>. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. <strong><em>Attention:</em></strong> Check your existing topics when you upgrade TWiki! 
+</li>
+</ul>
+</li>
+<li> <strong>18 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">WebChanges</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">WebSearch</a> and e-mail notification indicate also the revision number of a topic (i.e. <u>18 Jan 2001 16:43 r1.5</u>), or NEW for a new topic (i.e. i.e. <u>18 Jan 2001 16:43 <b>NEW</b></u>). 
+</li>
+</ul>
+</li>
+<li> <strong>16 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variable <code>%STARTINCLUDE%</code> and <code>%STOPINCLUDE%</code> variables to control what gets included of a topic. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>16 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> TWiki skins Define a different page layout with a customized header and footer layout, i.e. a <code>print</code> skin for a printable view of a topic. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">TWikiSkins</a> and <a href="http://twiki.org/cgi-bin/view/Codev/TWikiSkins" title="'Codev/TWikiSkins' on TWiki site, we know it!">TWiki:Codev/TWikiSkins</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/StanleyKnutson">StanleyKnutson</a>
+<ul>
+<li> Better error handling when saving a topic. 
+</li>
+</ul>
+</li>
+<li> <strong>05 Jan 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> View authorization based on groups. Define who is allowed to see a TWiki web. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a> and <a href="http://twiki.org/cgi-bin/view/Codev/AuthenticationBasedOnGroups" title="'Codev/AuthenticationBasedOnGroups' on TWiki site, we know it!">TWiki:Codev/AuthenticationBasedOnGroups</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>05 Dec 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Improved include handling. Infinite recursion of includes are prevented; new variables <code>%BASEWEB%</code>, <code>%INCLUDINGWEB%</code>, <code>%BASETOPIC%</code> and <code>%INCLUDINGTOPIC%</code> to have more control over include handling. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> and <a href="http://twiki.org/cgi-bin/view/Codev/IncludeHandlingImprovements" title="'Codev/IncludeHandlingImprovements' on TWiki site, we know it!">TWiki:Codev/IncludeHandlingImprovements</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>03 Dec 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>noheader="on"</code> switch in <code>%SEARCH{...}%</code> to suppress table header. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_Dec_2000_Release"> 01-Dec-2000 Release </a></h2>
+<p />
+<ul>
+<li> <strong>03 Nov 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Flag <code>$doHidePasswdInRegistration</code> in <code>wikicfg.pm</code> to hide plain text password in registration email. 
+</li>
+</ul>
+</li>
+<li> <strong>01 Nov 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variable <code>%VAR{"NAME" web="Web"}%</code> to get web specific preferences. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>01 Nov 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added a "Cancel" link in edit that releases the edit lock. 
+</li>
+</ul>
+</li>
+<li> <strong>23 Oct 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Authorization based on groups. Define fine graned control who is allowed to change or create topics. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a> and <a href="http://twiki.org/cgi-bin/view/Codev/AuthenticationBasedOnGroups" title="'Codev/AuthenticationBasedOnGroups' on TWiki site, we know it!">TWiki:Codev/AuthenticationBasedOnGroups</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>05 Oct 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Remember user by IP address so that <code>view</code> "knows" the user once authenticated in <code>edit</code>. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiUserAuthentication">TWikiUserAuthentication</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>26 Sep 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/AlWilliams">AlWilliams</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed <a href="http://twiki.org/cgi-bin/view/Codev/UppercaseAttachments" title="'Codev/UppercaseAttachments' on TWiki site, we know it!">TWiki:Codev/UppercaseAttachments</a> bug and added <code>png</code> image support. 
+</li>
+</ul>
+</li>
+<li> <strong>26 Sep 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/HaroldGottschalk">HaroldGottschalk</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Allow nesting of variables, i.e. <code>%INCLUDE{"%TWIKIWEB%.TWikiWebsTable"}%</code>. More in <a href="http://twiki.org/cgi-bin/view/Codev/BetterTWikiTagTemplateProcessing" title="'Codev/BetterTWikiTagTemplateProcessing' on TWiki site, we know it!">TWiki:Codev/BetterTWikiTagTemplateProcessing</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>20 Sep 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/ManpreetSingh">ManpreetSingh</a>
+<ul>
+<li> New -q switch in <code>mailnotify</code> to suppress all normal output. 
+</li>
+</ul>
+</li>
+<li> <strong>19 Sep 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed <a href="http://twiki.org/cgi-bin/view/Codev/AttachedNotificationLinksBug" title="'Codev/AttachedNotificationLinksBug' on TWiki site, we know it!">TWiki:Codev/AttachedNotificationLinksBug</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>18 Sep 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/ManpreetSingh">ManpreetSingh</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added forced internal links. Write <code>[[text formatting FAQ]]</code> to get the link <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingFAQ">text formatting FAQ</a> that points to topic <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingFAQ">TextFormattingFAQ</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>19 Aug 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Ref-By link searches all webs (not just the current web.) 
+</li>
+</ul>
+</li>
+<li> <strong>16 Aug 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> variables <code>%HTTP_EQUIV_ON_VIEW%</code> , <code>%HTTP_EQUIV_ON_EDIT%</code> and <code>%HTTP_EQUIV_ON_PREVIEW%</code> that define the <code>&lt;meta http-equiv="..."&gt;</code> meta tags for the TWiki templates. This can be used for example to set a document expiration time. 
+</li>
+</ul>
+</li>
+<li> <strong>29 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variables <code>%GMTIME{"..."}%</code> and <code>%SERVERTIME{"..."}%</code> . More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>23 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Changed include syntax from <code>%INCLUDE{"Web/TopicName.txt"}%</code> to <code>%INCLUDE{"Web.TopicName"}%</code> . Legacy syntax still supported. 
+</li>
+</ul>
+</li>
+<li> <strong>23 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/BookView">BookView</a> search allows you show a set of topics for easy printing. 
+</li>
+</ul>
+</li>
+<li> <strong>22 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> More forgiving syntax for <code>*bold*, <em>italic</em>, __bold italic__</code> and <code><b>fixed</b></code> , where it is not necessary anymore to have a trailing space before <code>.,;:?!</code> characters. 
+</li>
+</ul>
+</li>
+<li> <strong>22 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Split the TWiki.Main web into TWiki.Main (users, company data) and TWiki.TWiki (TWiki related documentation, registration) 
+</li>
+</ul>
+</li>
+<li> <strong>07 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added an "Release edit lock" checkbox in preview to let other people edit the topic immediately without the one hour lock. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Jul 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed problem of losing carriage returns when editing topics with KDE KFM browser or W3M browser. 
+</li>
+</ul>
+</li>
+<li> <strong>21 Jun 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed problem that a page redirect on some server environments is not working (host name is needed in URL). 
+</li>
+</ul>
+</li>
+<li> <strong>21 Jun 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/CrisBailiff">CrisBailiff</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed security issue to prevent a server side <code>%INCLUDE%</code> of arbitrary files. 
+</li>
+</ul>
+</li>
+<li> <strong>29 May 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <code>%GMTIME%</code> variable that shows the current GM time. 
+</li>
+</ul>
+</li>
+<li> <strong>28 May 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Lock warning shows remaining lock time in minutes. 
+</li>
+</ul>
+</li>
+<li> <strong>15 May 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterFokkinga">PeterFokkinga</a>
+<ul>
+<li> Each topic can have its own template file. <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a> has more. 
+</li>
+</ul>
+</li>
+<li> <strong>02 May 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/KevinKinnell">KevinKinnell</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Advanced search features like search multiple webs; sort by topic name / modified time / author; limit the number of results returned. More in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>. 
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_May_2000_Release"> 01-May-2000 Release </a></h2>
+<p />
+<ul>
+<li> <strong>21 Apr 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> <code>%HTTP_HOST%</code> , <code>%REMOTE_ADDR%</code> , <code>%REMOTE_PORT%</code> and <code>%REMOTE_USER%</code> . 
+</li>
+</ul>
+</li>
+<li> <strong>21 Apr 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnAltstadt">JohnAltstadt</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiRegistration">TWikiRegistration</a> is done separately for Intranet use (depends on remote_user) or Internet use (depends on .htpasswd file). 
+</li>
+</ul>
+</li>
+<li> <strong>20 Mar 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Uploading a file (topic file attachment) will optionally create a link to the uploaded file at the end of the topic. The preference variable <code>%ATTACHLINKBOX%</code> controls the default state of the <strong><em>link</em></strong> check box in the attach file page. 
+</li>
+</ul>
+</li>
+<li> <strong>11 Mar 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Better security with taint checking ( <code>Perl -T</code> option ) 
+</li>
+</ul>
+</li>
+<li> <strong>25 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New preference variables <code>%EDITBOXWIDTH%</code> and <code>%EDITBOXHEIGHT%</code> to specify the edit box size. 
+</li>
+</ul>
+</li>
+<li> <strong>25 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Edit preferences topics to set TWiki variables. There are three level of preferences Site-level (<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>), web-level (<a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> in each web) and user-level preferences (for each of the <a href="http://TWiki.org/cgi-bin/view/Main/TWikiUsers">TWikiUsers</a>). With this, discontinue use of server side include of <code>wikiwebs.inc</code> , <code>wikiwebtable.inc</code> , <code>weblist.inc</code> , <code>webcopyright.inc</code> and <code>webcolors.inc</code> files.  
+</li>
+</ul>
+</li>
+<li> <strong>11 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variable <code>%SCRIPTSUFFIX%</code> / $scriptSuffix containing an optional file extension of the TWiki Perl script. Templates have been changed to use this variable. This allows you to rename the Perl script files to have a file extension like for example ".cgi". 
+</li>
+</ul>
+</li>
+<li> <strong>11 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variable <code>%SCRIPTURLPATH%</code> / $scriptUrlPath containing the script URL without the domain name. Templates have been changed to use this variable instead of <code>%SCRIPTURL%</code> . This is for performance reasons. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Changed the syntax for server side include variable from <code>%INCLUDE:"filename.ext"%</code> to <code>%INCLUDE{"filename.ext"}%</code> . (Previous syntax still supported. Change was done because of inline search syntax) 
+</li>
+</ul>
+</li>
+<li> <strong>07 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Inline search. New variable <code>%SEARCH{"str" ...}%</code> to show a search result embedded in a topic text. <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> has more on the syntax. Inline search combined with the category table feature can be used for example to create a simple bug tracking system. 
+</li>
+</ul>
+</li>
+<li> <strong>04 Feb 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Access statistics. Each web has a <a href="http://TWiki.org/cgi-bin/view/TWiki/WebStatistics">WebStatistics</a> topic that shows monthy statistics with number of topic views and changes, most popular topics, and top contributors. (It needs to be enabled, <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a> has more.) 
+</li>
+</ul>
+</li>
+<li> <strong>29 Jan 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed bug where TWiki would not initialize correctly under certain circumstances, i.e. when running it under mod_perl. Sub <code>initialize</code> in <code>wiki.pm</code> did not handle <code>$thePathInfo</code> correctly. 
+</li>
+</ul>
+</li>
+<li> <strong>24 Jan 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed bug where an email address starting with a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> was rendered as an internal Wiki link instead of an email address, i.e. <a href="mailto:SomeWikiName@somewhere.test">SomeWikiName@somewhere.test</a> . 
+</li>
+</ul>
+</li>
+<li> <strong>10 Jan 2000</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> No more escaping for '%' percent characters. (Number of consecutive '%' entered and displayed is identical.) 
+</li>
+</ul>
+</li>
+<li> <strong>03 Oct 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Limit the number of revisions shown at the bottom of the topic. Example <br> Topic TWikiHistory . { .....   <A href="../../rdiff/TWiki/TWikiHistory">Diffs</A>   r1.10   <A href="../../rdiff/TWiki/TWikiHistory?rev1=1.10&amp;rev2=1.9">&gt;</A>   <A href="../../view/TWiki/TWikiHistory?rev=1.9">r1.9</A>   <A href="../../rdiff/TWiki/TWikiHistory?rev1=1.9&amp;rev2=1.8">&gt;</A>   <A href="../../view/TWiki/TWikiHistory?rev=1.8">r1.8</A>   <A href="../../rdiff/TWiki/TWikiHistory?rev1=1.8&amp;rev2=1.7">&gt;</A>   <A href="../../view/TWiki/TWikiHistory?rev=1.7">r1.7</A>   <A href="../../oops/TWiki/TWikiHistory?template=oopsrev&amp;param1=1.10">&gt;...</A> } <br> Additional revisions can be selected by pressing the <code>&gt;...</code> link.  
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_Sep_1999_Release"> 01-Sep-1999 Release </a></h2>
+<p />
+<ul>
+<li> <strong>31 Aug 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed Y2K bug. (Date in year 2000 had wrong format.) 
+</li>
+</ul>
+</li>
+<li> <strong>08 Aug 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New text formatting rule for creating tables. Text gets rendered as a table if enclosed in " " vertical bars. Example line as it is written and how it shows up  
+</li>
+</ul>
+</li>
+<li> <strong>03 Aug 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Online registration of new user using web form in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiRegistration">TWikiRegistration</a>. Authentication of users. 
+</li>
+</ul>
+</li>
+<li> <strong>22 Jul 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Flags <code>$doLogTopic*</code> in wikicfg.pm to selectively log topic view, edit, save, rdiff, attach, search and changes to monthly log file. 
+</li>
+</ul>
+</li>
+<li> <strong>21 Jul 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Flag <code>$doRemovePortNumber</code> in wikicfg.pm to optionally remove the port number from the TWiki URL. Example <code>www.some.domain:1234/twiki</code> gets <code>www.some.domain/twiki</code> . 
+</li>
+</ul>
+</li>
+<li> <strong>15 Jul 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Search path for include files in <code>%INCLUDE:"file.inc"%</code> variable. Search first in the current web, then in parent data directory. Useful to overload default include text in the data directory by web-specific text, like for example <code>webcopyright.inc</code> text. 
+</li>
+</ul>
+</li>
+<li>  <strong>07 Jul 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/ChristopheVermeulen">ChristopheVermeulen</a>
+<ul>
+<li> Link a plural topic to a singular topic in case the plural topic does not exist. Example <code>TestVersion</code> / <code>TestVersions</code> , <code>TestPolicy</code> / <code>TestPolicies</code> , <code>TestAddress</code> / <code>TestAddresses</code> , <code>TestBox</code> / <code>TestBoxes</code> .
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="01_Jul_1999_Release"> 01-Jul-1999 Release </a></h2>
+<p />
+<ul>
+<li> <strong>23 Jun 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingRules">TextFormattingRules</a> to write <strong><em>bold italic</em></strong> text by enclosing words with double underline characters. 
+</li>
+</ul>
+</li>
+<li> <strong>23 Jun 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Separate wiki.pm into configuration (wikicfg.pm) and TWiki core (wiki.pm) . This is to ease the upgrade of TWiki installations, it also allows customized extensions to TWiki without affecting the TWiki core. 
+</li>
+</ul>
+</li>
+<li> <strong>21 May 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/DavidWarman">DavidWarman</a>
+<ul>
+<li> Externalize copyright text at the bottom of every page into a web-specific <code>webcopyright.inc</code> file. This is to easily customize the copyright text.  
+</li>
+</ul>
+</li>
+<li> <strong>20 May 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added meta tag so that robots index only /view/ of topics, not /edit/, /attach/ e.t.c. Tag &lt;META NAME="ROBOTS" CONTENT="NOINDEX"&gt; 
+</li>
+</ul>
+</li>
+<li> <strong>20 May 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variables <code>%WIKIHOMEURL%</code> (link when pressing the icon on the upper left corner) and <code>%WIKITOOLNAME%</code> (the name of the wiki tool <code>TWiki</code> ). 
+</li>
+</ul>
+</li>
+<li> <strong>15 Apr 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Topic locking Warn user if a topic has been edited by an <em>other</em> person within <em>one</em> hour. This is to prevent contention, e.g. simultaneous topic updates. 
+</li>
+</ul>
+</li>
+<li> <strong>26 Mar 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> File attachments Upload and download any file as a topic attachment by using the browser. <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachment</a> has more. 
+</li>
+</ul>
+</li>
+<li> <strong>26 Mar 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New variables <code>%PUBURL%</code> (Public directory URL) and <code>%ATTACHURL%</code> (URL of topic file attachment). 
+</li>
+</ul>
+</li>
+<li> <strong>09 Feb 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> New text formatting rule for creating <code>fixed font text</code> . Words get showns in <code>fixed font</code> by enclosing them in "=" equal signs. Example Writing =fixed font= will show up as <code>fixed font</code> . 
+</li>
+</ul>
+</li>
+<li> <strong>09 Feb 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> No new topic revision is created if the <em>same</em> person saves a topic again within <em>one</em> hour. 
+</li>
+</ul>
+</li>
+<li> <strong>03 Feb 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Possible to view complete revision history of a topic on one page. Access at the linked date in the Changes page, or the <code>Diffs</code> link at the bottom of each topic, e.g. <br> <code> Topic TWikiHistory . { Edit   Ref-By   Diffs   r1.3   &gt;   r1.2   &gt;   r1.1 } <br> Revision r1.3 1998/11/10 01:34 by PeterThoeny </code> 
+</li>
+</ul>
+</li>
+<li> <strong>04 Jan 1999</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Fixed bug when viewing differences between topic revisions that include HTML table tags like &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;. 
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="1998_Releases"> 1998 Releases </a></h2>
+<p />
+<ul>
+<li> <strong>08 Dec 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Signature is shown below the text area when editing a topic. Use this to easily copy &amp; paste your signature into the text. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Dec 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Possible to add a category table to a TWiki topic. This permits storing and searching for more structured information. Editing a topic shows a HTML form with the usual text area and a table with selectors, checkboxes, radio buttons and text fields. <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a> has more on setup. The TWiki.Know web uses this category table to set classification, platform and OS version.  
+</li>
+</ul>
+</li>
+<li> <strong>18 Nov 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Internal log of topic save actions to the file <code>data/logYYYYMM.txt</code>, where <code>YYYYMM</code> the year and month in numeric format is. Intended for auditing only, not accessible from the web. 
+</li>
+</ul>
+</li>
+<li> <strong>10 Nov 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> The email notification and the Changes topic have now a topic date that is linked. Clicking on the link will show the difference between the two most recent topic revisions. 
+</li>
+</ul>
+</li>
+<li> <strong>10 Nov 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> View differences between topic revisions. Each topic has a list of revisions (e.g. <code>r1.3</code>) and differences thereof (e.g. <code>&gt;</code>) at the bottom <br> <code> Topic TWikiHistory . { Edit   Ref-By   r1.3   &gt;   r1.2   &gt;   r1.1 } <br> Revision r1.3 1998/11/10 01:34 by <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> </code> 
+</li>
+</ul>
+</li>
+<li> <strong>26 Oct 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added preview of topic changes before saving the topic. This was necessary to prevent unneeded revisions. 
+</li>
+</ul>
+</li>
+<li> <strong>26 Oct 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added revision control using RCS. Each topic has now a list of revisions at the bottom and a revision info, e.g. <br> <code> Topic TWikiHistory . { Edit   Ref-By   r1.3   r1.2   r1.1 } <br> Revision r1.3 1998/10/26 01:34:00 by <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> </code> 
+</li>
+</ul>
+</li>
+<li> <strong>14 Oct 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Refered-By Find out which topics have a link to the current topic. Each topic has a  Ref-By  link for that. Note Only references from the current web are shown, not references from other webs. 
+</li>
+</ul>
+</li>
+<li> <strong>13 Oct 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Alphabetical topic index in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">WebSearch</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>24 Sep 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Corrected templates for automatic email notification so that MS Outlook can display attachment as an HTML file. 
+</li>
+</ul>
+</li>
+<li> <strong>13 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiNotation">WikiNotation</a> allows also numbers after the <code>AaA</code> sequence, e.g. <code>AaA1</code> is a valid <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiTopic">WikiTopic</a> name, but not <code>Aa1</code>. 
+</li>
+</ul>
+</li>
+<li> <strong>07 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Automatic email notification when something has changed in a TWiki web. Each web has a topic <a href="http://TWiki.org/cgi-bin/view/TWiki/WebNotify">WebNotify</a> where one can subscribe and unsubscribe. 
+</li>
+</ul>
+</li>
+<li> <strong>06 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added server side include of files. Syntax is <code>%INCLUDE:"filename.ext"%</code> 
+</li>
+</ul>
+</li>
+<li> <strong>05 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Signature and date is inserted automatically when creating a new topic. 
+</li>
+</ul>
+</li>
+<li> <strong>04 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Separate templates for text of non existing topic and default text of new topic. (template file templates/Web/notedited.tmpl) 
+</li>
+</ul>
+</li>
+<li> <strong>04 Aug 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Warn user if new topic name is not a valid Wiki name. (template file templates/Web/notwiki.tmpl) 
+</li>
+</ul>
+</li>
+<li> <strong>31 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Support for quoted text with a '&gt;' at the beginning of the line. 
+</li>
+</ul>
+</li>
+<li> <strong>28 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added TWiki variables, enclosed in % signs <code>%TOPIC%</code> (Topic name), <code>%WEB%</code> (web name), <code>%SCRIPTURL%</code> (script URL), <code>%DATE%</code> (current date), <code>%WIKIWEBMASTER%</code> (Wiki webmaster address), <code>%WIKIVERSION%</code> (Wiki version), <code>%USERNAME%</code> (user name), <code>%WIKIUSERNAME%</code> (Wiki user name). 
+</li>
+</ul>
+</li>
+<li> <strong>28 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Topic <a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">WebChanges</a> shows Wiki username instead of Intranet username, e.g. <code>PeterThoeny</code> instead of <code>thoeny</code> in case the Wiki username exists. Implementation Automatic lookup of Wiki username in topic <a href="http://TWiki.org/cgi-bin/view/Main/TWikiUsers">TWikiUsers</a>. 
+</li>
+</ul>
+</li>
+<li> <strong>28 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Topic index. (Technically speaking a simple '.*' search on topic names.)  
+</li>
+</ul>
+</li>
+<li> <strong>28 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Topic <a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">WebSearch</a> allows full text search and and topic search with/without regular expressions. 
+</li>
+</ul>
+</li>
+<li> <strong>27 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Added automatic links to topics in other TWiki webs by specifying &lt;web name&gt;.&lt;topic name&gt;, e.g. <code>Know.WebSeach</code> . 
+</li>
+</ul>
+</li>
+<li> <strong>23 Jul 1998</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<ul>
+<li> Installed initial version, based on the JOS Wiki. See <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWikiClones">WikiWikiClones</a> for details.
+</li>
+</ul>
+</li>
+</ul>
+<p />
+<h2><a name="Dev_Flow"> Dev Flow </a></h2>
+<p />
+The typical TWiki development flow...
+<p />
+<ul>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureBrainstorming" title="'Codev.FeatureBrainstorming' on TWiki site, we know it!">TWiki:Codev.FeatureBrainstorming</a>: open forum for new ideas  
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureEnhancementRequest" title="'Codev.FeatureEnhancementRequest' on TWiki site, we know it!">TWiki:Codev.FeatureEnhancementRequest</a>: specific detailed request
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureToDo" title="'Codev.FeatureToDo' on TWiki site, we know it!">TWiki:Codev.FeatureToDo</a>: prioritized to up-next dev status
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureUnderConstruction" title="'Codev.FeatureUnderConstruction' on TWiki site, we know it!">TWiki:Codev.FeatureUnderConstruction</a>: currently in development
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureDone" title="'Codev.FeatureDone' on TWiki site, we know it!">TWiki:Codev.FeatureDone</a>: completed and implemented
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.DocRequest" title="'Codev.DocRequest' on TWiki site, we know it!">TWiki:Codev.DocRequest</a>: request for documentation
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.DocsToDo" title="'Codev.DocsToDo' on TWiki site, we know it!">TWiki:Codev.DocsToDo</a>: feature documentation pending
+</li>
+<li> <a href="http://twiki.org/cgi-bin/view/Codev.FeatureDocumented" title="'Codev.FeatureDocumented' on TWiki site, we know it!">TWiki:Codev.FeatureDocumented</a>: documented feature
+</li>
+<li> <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a>: reference manual for the latest TWiki
+</li>
+</ul>
+<p />
+</body></html>

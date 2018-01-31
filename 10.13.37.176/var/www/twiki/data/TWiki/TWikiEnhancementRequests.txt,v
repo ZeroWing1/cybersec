@@ -1,0 +1,98 @@
+head	1.4;
+access;
+symbols;
+locks
+	nobody:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2003.01.23.08.34.11;	author PeterThoeny;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2000.11.09.02.43.36;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.05.13.00.08.32;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.07.56.53;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.4
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1043310851" format="1.0" version="1.4"}%
+	* Please bring your enhancement requests to TWiki:Codev.FeatureEnhancementRequest
+
+*Related Topics*
+	* TWikiHistory has a list of added features in TWiki.
+	* TWikiPlannedFeatures has a list of planned features.
+	* TWikiDocumentation is the implementation documentation. 
+
+-- Main.PeterThoeny - 23 Jan 2003
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 2
+a2 1
+	* Please add enhancement request at the TWiki home at http://TWiki.org/cgi-bin/view/Codev/FeatureEnhancementRequest
+d9 1
+a9 1
+-- Main.PeterThoeny - 12 May 2000 <br>
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+	* Please add enhancement request at the TWiki home at http://TWiki.SourceForge.net/cgi-bin/view/Codev/FeatureEnhancementRequest
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+This is the place to discuss what kind of new features you would like to have in TWiki.
+d3 4
+a6 10
+*Note:*
+	* Please add your comment at the bottom of this topic. Dont forget to sign and date it.
+	* TWikiDocumentation and TWikiHistory have implementation details on TWiki.
+	* TWikiPlannedFeatures has a list of planned features. 
+
+-- PeterThoeny - 14 Oct 1998
+
+----------
+
+New features I would like to have in TWiki:
+d8 1
+@

@@ -1,0 +1,15 @@
+POST /phpMyAdmin/index.php HTTP/1.1
+Host: 10.13.37.176
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.13.37.176/phpMyAdmin/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 92
+Cookie: pma_lang=en-utf-8; pma_charset=utf-8; pmaUser-1=4FACfPtjDW8%3D; phpMyAdmin=d7ffe67b09b039ae0eec8595f998714ea1880673; pma_fontsize=82%25; pmaPass-1=fXjqo8Id78M%2BMfCxPO%2BARA%3D%3D; PHPSESSID=8e7ac859ba246ba81651b998776f0ea1
+DNT: 1
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+pma_username=anyone&pma_password=anypassword&server=1&token=3dc286ec14a40d3c1ec873e237b93d04

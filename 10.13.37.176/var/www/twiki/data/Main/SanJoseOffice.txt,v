@@ -1,0 +1,66 @@
+head	1.3;
+access;
+symbols;
+locks
+	nobody:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2000.12.15.18.00.34;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.08.19.00.23.05;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.04.29.07.00.33;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@none
+@
+text
+@Here would stand the information about the San Jose office:
+
+	* Address:
+	* Phone:
+	* Fax:
+	* <a href="%SCRIPTURL%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&search=Location:%20%TOPIC%">List</a> of employees at <nop>%TOPIC%.
+
+__Related topic:__ OfficeLocations, %WIKIUSERSTOPIC%
+@
+
+
+1.2
+log
+@none
+@
+text
+@d6 1
+d8 1
+a8 1
+%INCLUDE{"OfficeLocations"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d7 1
+a7 1
+%INCLUDE{"OfficeLocations.txt"}%
+@

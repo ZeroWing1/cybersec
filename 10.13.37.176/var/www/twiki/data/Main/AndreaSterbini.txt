@@ -1,0 +1,7 @@
+%META:TOPICINFO{author="PeterThoeny" date="1042329760" format="1.0" version="1.2"}%
+%META:TOPICPARENT{name="TWikiAdminGroup"}%
+I am a TWiki:Main/CoreTeam member (I am guilty of the Plugins developement ;-) )
+
+See home page at TWiki:Main/AndreaSterbini
+
+-- Main.AndreaSterbini - 13 Dec 2001

@@ -1,0 +1,128 @@
+%META:TOPICINFO{author="PeterThoeny" date="1029257204" format="1.0" version="1.9"}%
+%META:TOPICPARENT{name="TWikiVariables"}%
+%TOC%
+%STARTINCLUDE%
+---# TWiki Formatted Search Results
+
+_Inline search feature allows flexible formatting of search result_
+
+The =%<nop>SEARCH{...}%= variable documented in TWikiVariables has a fixed format for the search result, that is, a table consisting of topic names and topic summaries. Use the =format="..."= parameter to specify a customized format of the search result. The string of the format parameter is typically a bullet list or table row containing variables (such as =%<nop>SEARCH{ "food" format="| $topic | $summary |" }%=).
+
+---++ Syntax
+
+Two parameters can be used to specify a customized search result:
+
+1. =header="..."= parameter
+
+Use the header parameter to specify the header of a search result. It should correspond to the format of the format parameter. This parameter is optional. <br /> Example: =header="| <nop>*Topic:*<nop> | <nop>*Summary:*<nop> |"=
+
+2. =format="..."= parameter
+
+Use the format parameter to specify the format of one search hit.
+<br /> Example: =format="| $topic | $summary |"=
+
+Variables that can be used in the format string:
+
+| *Name:* | *Expands To:* |
+| =$web= | Name of the web |
+| =$topic= | Topic name |
+| =$topic(20)= | Topic name, "<tt>- </tt>" hyphenated each 20 characters |
+| =$topic(30, -&lt;br /&gt;)= | Topic name, hyphenated each 30 characters with separator "<tt>-&lt;br /&gt;</tt>" |
+| =$topic(40, ...)= | Topic name, shortended to 40 characters with "<tt>...</tt>" indication |
+| =$text= | Formatted topic text |
+| =$locked= | LOCKED flag (if any) |
+| =$date= | Time stamp of last topic update, like =%GMTIME{"$day $mon $year - $hour:$min"}%= |
+| =$isodate= | Time stamp of last topic update, like =%GMTIME{"$year-$mo-$dayT$hour:$minZ"}%= |
+| =$rev= | Number of last topic revision, like =1.4= |
+| =$wikiusername= | Wiki user name of last topic update, like =%MAINWEB%.<nop>JohnSmith= |
+| =$username= | User name of last topic update, like =<nop>JohnSmith= |
+| =$summary= | Topic summary |
+| =$formfield(name)= | The field value of a form field; for example, =$formfield(<nop>TopicClassification)= would get expanded to =PublicFAQ=. This applies only to topics that have a [[TWikiForms][TWikiForm]] |
+| =$formfield(name, 10)= | Form field value, "<tt>- </tt>" hyphenated each 10 characters |
+| =$formfield(name, 20, -&lt;br /&gt;)= | Form field value, hyphenated each 20 characters with separator "<tt>-&lt;br /&gt;</tt>" |
+| =$formfield(name, 30, ...)= | Form field value, shortended to 30 characters with "<tt>...</tt>" indication |
+| =$pattern(reg-exp)= | A regular expression pattern to extract some text from a topic. For example, =$pattern(.*?\*.*?Email\:\s*([^\n\r]+).*)= extracts the email address from a bullet of format =* Email: ...=. |
+| =$n= or =$n()= | New line |
+| =$nop= or =$nop()= | Is a "no operation". This variable gets removed; useful for nested search |
+| =$quot= | Double quote (="=). Alternatively write =\"= to escape it |
+| =$percnt= | Percent sign (=%=) |
+| =$dollar= | Dollar sign (=$=) |
+
+__Note:__ For =$pattern(reg-exp)=, specify a RegularExpression that scans from start to end and contains the text you want to keep in parenthesis, like =$pattern(.*?(from here.*?to here).*)=. You need to make sure that the integrity of a web page is not compromised; for example, if you include a table make sure to include everything including the table end tag.
+
+
+---++ Examples
+
+
+#SearchBulletList
+---+++ Bullet list showing topic name and summary
+
+*Write this:*
+
+=%<nop>SEARCH{ "FAQ" scope="topic" nosearch="on" nototal="on" header="	* <nop>*Topic: Summary:*" format="	* [<nop>[$topic]]: $summary" }%=
+
+*To get this:*
+
+%SEARCH{ "FAQ" scope="topic" nosearch="on" nototal="on" header="	* *Topic: Summary:*" format="	* [[$topic]]: $summary" }%
+
+
+---+++ Table showing form field values of topics with a form
+
+*Write this in the Know web:*
+
+=| <nop>*Topic:*<nop> | <nop>*<nop>OperatingSystem:*<nop> | <nop>*<nop>OsVersion:*<nop> |= <br />
+=%<nop>SEARCH{ "[T]opicClassification.*?value=\"[P]ublicFAQ\"" scope="text" regex="on" nosearch="on" nototal="on" format="| [<nop>[$topic]] | $formfield(<nop>OperatingSystem) | $formfield(<nop>OsVersion) |" }%=
+
+*To get this:*
+
+<table border="1" cellspacing="0" cellpadding="1">
+<tr>
+ <th bgcolor="#99CCCC"> <strong>Topic:</strong> </th>
+ <th bgcolor="#99CCCC"> <strong>OperatingSystem:</strong> </th>
+ <th bgcolor="#99CCCC"> <strong>OsVersion:</strong> </th></tr>
+<tr>
+ <td>  <a href="%SCRIPTURLPATH%/view%SCRIPTSUFFIX%/Know/IncorrectDllVersionW32PTH10DLL">IncorrectDllVersionW32PTH10DLL</a>  </td><td>  <a href="%SCRIPTURLPATH%/view%SCRIPTSUFFIX%/Know/OsWin">OsWin</a>  </td><td>  95/98  </td></tr>
+<tr>
+ <td>  <a href="%SCRIPTURLPATH%/view%SCRIPTSUFFIX%/Know/WinDoze95Crash">WinDoze95Crash</a>  </td>
+ <td>  <a href="%SCRIPTURLPATH%/view%SCRIPTSUFFIX%/Know/OsWin">OsWin</a>  </td>
+ <td>  95  </td></tr>
+</table>
+
+
+---+++ Extract some text from a topic using regular expression
+
+*Write this:*
+
+=%<nop>SEARCH{ "__Back to\:__ <nop>TWikiFAQ" scope="text" regex="on" nosearch="on" nototal="on" header="TWiki FAQs:" format="	* $pattern(.*?FAQ\:[\n\r]*([^\n\r]+).*) [<nop>[$topic][Answer...]]" }%=
+
+*To get this:*
+
+%SEARCH{ "__Back to\:__ TWikiFAQ" scope="text" regex="on" nosearch="on" nototal="on" header="TWiki FAQs:" format="	* $pattern(.*?FAQ\:[\n\r]*([^\n\r]+).*) [[$topic][Answer...]]" }%
+
+
+---+++ Nested Search
+
+Search can be nested. For example, search for some topics, then form a new search for each topic found in the first search. The idea is to build the nested search string using a formatted search in the first search.
+
+Here is an example. Let's search for all topics that contain the word "culture" (first search), and let's find out where each topic found is linked from (second search).
+
+	* First search:
+		* =%<nop>SEARCH{ "culture" format="	* $topic is referenced by: (list all references)" nosearch="on" nototal="on" }%=
+	* Second search. For each hit we want this search:
+		* =%<nop>SEARCH{ "(topic found in first search)" format="	$topic" nosearch="on" nototal="on" }%=
+	* Now let's nest the two. We need to escape the second search, e.g. the first search will build a valid second search string. Note that we escape the second search so that it does not get evaluated prematurely by the first search:
+		* Use =$percnt= to escape the leading percent of the second search
+		* Use =\"= to escape the double quotes
+		* Use =$dollar= to escape the =$= of =$topic=
+		* Use =$nop= to escape the =}%= sequence
+
+*Write this:*
+
+=%<nop>SEARCH{ "culture" format="	* $topic is referenced by:$n		* $percntSEARCH{ \"$topic\" format=\"	$dollartopic\" nosearch=\"on\" nototal=\"on\" }$nop%" nosearch="on" nototal="on" }%=
+
+*To get this:*
+
+%SEARCH{ "culture" format="	* $topic is referenced by:$n		* $percntSEARCH{ \"$topic\" format=\"	$dollartopic\" nosearch=\"on\" nototal=\"on\" }$nop%" nosearch="on" nototal="on" }%
+
+
+-- Main.PeterThoeny - 16 May 2002

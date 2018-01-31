@@ -1,0 +1,10 @@
+%META:TOPICINFO{author="PeterThoeny" date="999588055" format="1.0" version="1.9"}%
+%META:TOPICPARENT{name="WebHome"}%
+	* <B>Query by Classification</B>: 
+		* <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%54opicClassification.%2ANoDisclosure">No Disclosure</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%54opicClassification.%2APublicFAQ">Public FAQ</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%54opicClassification.%2APublicSupported">Public Supported</A>
+
+	* <B>Query by platform</B>:
+		* <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsHPUX">HP-UX</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsLinux">Linux</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsSolaris">Solaris</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsSunOS">SunOS</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsMacOS">Mac OS</A>, <A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsWin">Windows</A>
+
+%INCLUDE{"%TWIKIWEB%.WebSearch"}%
+		* Make sure to fill in the WebForm

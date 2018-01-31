@@ -1,0 +1,4 @@
+%META:TOPICINFO{author="PeterThoeny" date="1042338800" format="1.0" version="1.2"}%
+Rand Kramer is a TWikiContributor. 
+
+See home page at TWiki:Main/%TOPIC%

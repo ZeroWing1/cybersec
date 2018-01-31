@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.00.02.40;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.12.14.02.42.59;	author AndreaSterbini;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042329760" format="1.0" version="1.2"}%
+%META:TOPICPARENT{name="TWikiAdminGroup"}%
+I am a TWiki:Main/CoreTeam member (I am guilty of the Plugins developement ;-) )
+
+See home page at TWiki:Main/AndreaSterbini
+
+-- Main.AndreaSterbini - 13 Dec 2001
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="AndreaSterbini" date="1008297779" format="1.0" version="1.1"}%
+d3 3
+a5 1
+I am a CoreTeam member (I am guilty of the Plugins developement ;-) )
+@

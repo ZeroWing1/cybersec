@@ -1,0 +1,11 @@
+%META:TOPICINFO{author="PeterThoeny" date="999587670" format="1.0" version="1.3"}%
+*TopicClassification*
+
+Used to classify a topic in %WIKITOOLNAME%.%WEB%. Select one of:
+	* NoDisclosure: Confidential - No disclosure outside the company
+	* PublicFAQ: Public, use for FAQ
+	* PublicSupported: Public and supported
+
+Please select one of the Classification when submitting a topic.
+
+See also WebForm, WebSearch

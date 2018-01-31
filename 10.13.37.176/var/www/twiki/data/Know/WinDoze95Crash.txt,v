@@ -1,0 +1,66 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.09.04.07.08.02;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.06.13.06.08.26;	author guest;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="999587282" format="1.0" version="1.2"}%
+---++ Problem
+
+I got a call from Bill offering me $500 for each Windows crash reported to Micro$oft. 
+
+---++ Solution
+
+Use Linux.
+
+-- %MAINWEB%.TWikiGuest - 10 Feb 1999 <br>
+
+%META:FORM{name="WebForm"}%
+%META:FIELD{name="TopicClassification" title="TopicClassification" value="PublicFAQ"}%
+%META:FIELD{name="OperatingSystem" title="OperatingSystem" value="OsWin"}%
+%META:FIELD{name="OsVersion" title="OsVersion" value="95"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+d11 5
+a15 10
+<!--TWikiCat--> <h4> TWikiCategory </h4>
+<table border="2" cellspacing="1" cellpadding="1">
+<tr>
+<td valign="top" align="right"> TopicClassification:  <br></td><td>  PublicFAQ </td>
+</tr><tr>
+<td valign="top" align="right"> OperatingSystem:  <br></td><td>  OsWin </td>
+</tr><tr>
+<td valign="top" align="right"> OsVersion:  <br></td><td>  <!---->95<!---->&nbsp; </td>
+</tr>
+</table><!--TWikiCat-->
+@

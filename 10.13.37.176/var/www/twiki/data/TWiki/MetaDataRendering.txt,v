@@ -1,0 +1,105 @@
+head	1.3;
+access;
+symbols;
+locks
+	nobody:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2002.01.11.08.00.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.30.16.11.00;	author MikeMannix;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.29.16.22.44;	author JohnTalintyre;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1010736000" format="1.0" version="1.3"}%
+%META:TOPICPARENT{name="TWikiTemplates"}%
+%STARTINCLUDE%
+---## Meta Data Rendering
+
+Various meta data can be stored in topics - MetaDataDefinition
+
+This is rendered using the %<nop>META% variable.  This is mostly used in the =view=, =preview= and =edit= scripts.
+
+At present support is fairly basic:
+  | *Variable usage:*	| *Comment:*  |
+  | =%<nop>META{"form"}%= | Show form data, see [[TWikiDocumentation#Form_Templates][Form Templates]] |
+  | =%<nop>META{"attachments"}%= | Show attachments, excluding hidden ones. Options: <br > \
+	 ==all="on"==: Show all attachments i.e. including hidden ones |
+  | =%<nop>META{"moved"}%= | Details of any topic moves |
+  | =%<nop>META{"parent"}%= | Show topic parent. Options: <br /> \
+	 ==dontrecurse="on"==: By default recurses up tree, this has some cost. <br /> \
+	 ==nowebhome="on"==: Suppress <nop>%HOMETOPIC%. <br /> \
+	 ==prefix="..."==: Prefix that goes before parents, but only if there are parents, default =""=. <br /> \
+	 ==suffix="..."==: Suffix, only appears if there are parents, default =""=. <br /> \
+	 ==separator="..."==: Separator between parents, default is =" &gt; "=. |
+
+Possible future additions:
+	* Rendering of form data to alternate formats e.g. bullet lists
+	* Specify a template to be used for rendering
+%STOPINCLUDE%
+
+-- JohnTalintyre - 29 Aug 2001 <br />
+-- Main.PeterThoeny - 10 Jan 2002
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999187860" format="1.0" version="1.2"}%
+d12 10
+a21 11
+  | %<nop>META{"form"}% | Show form data, see [[TWikiDocumentation#Form_Templates][Form Templates]] |
+  | %<nop>META{"attachments"}% | Show attachments, excluding hidden ones |
+  | options for attachments: |
+  | all="on" | Show all attachments i.e.  including hidden ones |
+  | %<nop>META{"moved"}% | Details of any topic moves |
+  | %<nop>META{"parent [options]"}% | Show topic parent |
+  | options for parent: |
+  | dontrecurse="on" | By default recurses up tree, this has some cost |
+  | prefix="..." | Prefix that goes before parents, but only if there are parents, default "" |
+  | suffix="..." | Suffix, only appears if there are parents, default "" |
+  | seperator="..." | Seperator between parents, default is " > " |
+d27 1
+d29 1
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="JohnTalintyre" date="999103602" format="1.0" version="1.1"}%
+d3 1
+d27 1
+a27 1
+
+@

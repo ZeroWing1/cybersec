@@ -1,0 +1,4 @@
+%META:TOPICINFO{author="PeterThoeny" date="1042338325" format="1.0" version="1.2"}%
+Mike Mannix is a TWiki:Codev/CoreTeam member and a TWikiContributor.
+
+See TWiki:Main/MikeMannix

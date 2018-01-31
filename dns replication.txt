@@ -1,0 +1,26 @@
+DNS Replication
+	Process of updating DNS records on different servers so they contain
+	the same data
+
+Zone Transfer
+	- Transfer of DNS records between DNS servers
+	- between domain controllers (active directory integrated)
+	- between primary and secondary zones
+	- between secondary zones and other secondary zones
+	- between active directory integrated and secondary zones
+
+Zone Replication
+	- Active directory integrated zones replicate with AD
+		- Runs on same schedule as AD
+		- If you replicate AD, so does DNS replication
+		- If AD fails or stops, check the event view for AD errors
+		- Good for recovery as DNS is simply installed on a domain controller
+			(DC)
+		- Primary and secondary zones
+			- Set security who can replicate the data
+			- Zone replication can be triggered by:
+				Refresh interval expires
+				The server holding the secondary DNS zone boots up
+				Primary zone can notify the secondary zone a change has occured
+				
+				

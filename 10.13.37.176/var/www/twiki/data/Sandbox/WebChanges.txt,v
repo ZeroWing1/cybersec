@@ -1,0 +1,43 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.08.16.19.56.00;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.08.19.01.01.40;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="997991760" format="1.0beta2" version="1.2"}%
+%INCLUDE{"%TWIKIWEB%.WebChanges"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 2
+a2 1
+%SEARCH{".*" regex="on" nosearch="on" nototal="on" order="modified" reverse="on" limit="50"}%
+@

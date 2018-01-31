@@ -1,0 +1,102 @@
+head	1.3;
+access;
+symbols;
+locks
+	nobody:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2003.01.12.00.04.36;	author PeterThoeny;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.07.15.37.36;	author JohnTalintyre;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.08.01.13.06.01;	author JohnTalintyre;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.3
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042329876" format="1.0" version="1.3"}%
+John is a TWiki:Codev/CoreTeam member. See home page at TWiki:Main/JohnTalintyre
+@
+
+
+1.2
+log
+@none
+@
+text
+@d1 2
+a2 22
+%META:TOPICINFO{author="JohnTalintyre" date="997198656" format="1.0beta2" version="1.2"}%
+	* Name: John Talintyre
+	* Login Name: JohnTalintyre
+	* Email: john.talintyre@@drkw.com
+	* Phone: 
+	* Department: 
+	* Location: (Please specify office location)
+	* Comment: 
+
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Horizontal size of text edit box:
+		* Set EDITBOXWIDTH = 100
+	* Vertical size of text edit box:
+		* Set EDITBOXHEIGHT = 40
+	* Optionally write protect your home page: (set it to your %TWIKIWEB%.WikiName)
+		* Set ALLOWTOPICCHANGE = 
+
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* %WIKIUSERSTOPIC% has a list of other TWiki users.
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 22
+a22 23
+%META:TOPICINFO{author="JohnTalintyre" date="996671161" format="1.0beta2" version="1.1"}%
+	* Name: John Talintyre
+	* Login Name: JohnTalintyre
+	* Email: john.talintyre@@drkw.com
+	* Phone: 
+	* Department: 
+	* Location: (Please specify office location)
+	* Comment: 
+
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Horizontal size of text edit box:
+		* Set EDITBOXWIDTH = 70
+	* Vertical size of text edit box:
+		* Set EDITBOXHEIGHT = 17
+	* Optionally write protect your home page: (set it to your %TWIKIWEB%.WikiName)
+		* Set ALLOWTOPICCHANGE = 
+
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* %WIKIUSERSTOPIC% has a list of other TWiki users.
+
+@

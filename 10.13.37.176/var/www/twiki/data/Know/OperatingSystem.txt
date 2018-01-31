@@ -1,0 +1,17 @@
+%META:TOPICINFO{author="PeterThoeny" date="999587616" format="1.0" version="1.4"}%
+*Operating System*
+
+Check one or more platforms:
+<table><tr><td valign="top">
+	* <code> OsHPUX: </code> HP-UX
+	* <code> OsLinux: </code> Linux
+	* <code> OsSolaris: </code> SUN's Solaris
+</td><td valign="top">
+	* <code> OsSunOS: </code> SUN's SunOS
+	* <code> OsMacOS: </code> Apple's Mac OS
+	* <code> OsWin: </code> Windows 95 / 98 / NT
+</td></tr></table>
+
+The [Set] button will select all, [Clear] will clear all check boxes. (This works only with a <nop>JavaScript enabled browser)
+
+See also WebForm, WebSearch

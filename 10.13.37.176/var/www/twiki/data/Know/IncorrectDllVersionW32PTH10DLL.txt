@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="PeterThoeny" date="999587534" format="1.0" version="1.4"}%
+---++ Problem
+
+When I start the application Xyz it shows error message =Incorrect DLL version W32PTH10.DLL= .
+
+---++ Solution
+
+Download the attached file =W32PTH10.DLL= and replace the one in the =C:\xvz\bin= directory.
+
+-- %MAINWEB%.PeterThoeny - 12 Mar 2000 <br>
+%META:FORM{name="WebForm"}%
+%META:FIELD{name="TopicClassification" title="TopicClassification" value="PublicFAQ"}%
+%META:FIELD{name="OperatingSystem" title="OperatingSystem" value="OsWin"}%
+%META:FIELD{name="OsVersion" title="OsVersion" value="95/98"}%
+%META:FILEATTACHMENT{name="W32PTH10.DLL" attr="" comment="Version 1.6.9" date="952850460" path="C:\DATA\W32PTH10.DLL" size="64" user="thoeny" version=""}%

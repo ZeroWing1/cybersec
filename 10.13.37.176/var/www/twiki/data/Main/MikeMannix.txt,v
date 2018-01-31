@@ -1,0 +1,157 @@
+head	1.5;
+access;
+symbols;
+locks
+	nobody:1.5; strict;
+comment	@# @;
+
+
+1.5
+date	2003.01.12.00.05.17;	author PeterThoeny;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.04.18.03.30.10;	author MikeMannix;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.03.05.23.45.00;	author MikeMannix;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.11.21.00.12.12;	author MikeMannix;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.11.20.23.10.06;	author MikeMannix;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.5
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042329917" format="1.0" version="1.5"}%
+Mike is a TWiki:Codev/CoreTeam member. See home page at TWiki:Main/MikeMannix
+@
+
+
+1.4
+log
+@none
+@
+text
+@d1 2
+a2 17
+%META:TOPICINFO{author="PeterThoeny" date="998707879" format="1.0" version="1.4"}%
+	* Name: Mike Mannix
+	* Email: mike@@gearcore.com
+	* Company Name: AIR / AIRservices 
+	* Country: USA
+	* TWiki Comments: xtreme fan
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Size of __text edit box__:
+		* Set EDITBOXWIDTH = 70
+		* Set EDITBOXHEIGHT = 21
+	* Default state of __Attach file link__ checkbox:
+		* Set ATTACHLINKBOX = 
+	* __Write-protect this page__ (optional):
+		* Set ALLOWTOPICCHANGE = 
+
+	* Directory of twiki.org members: TWikiUsers
+@
+
+
+1.3
+log
+@none
+@
+text
+@d1 1
+d4 1
+a4 2
+	* Company Name: 
+	* Company URL: 
+d6 1
+a6 3
+	* Heard About: online
+	* Comment: 
+
+d9 1
+a9 1
+	* Horizontal size of text edit box:
+a10 1
+	* Vertical size of text edit box:
+d12 1
+a12 1
+	* Default state of the __link__ check box in the attach file page:
+d14 2
+a15 2
+	* Optionally write protect your home page: (set it to your %TWIKIWEB%.WikiName)
+		* Set ALLOWTOPICCHANGE = Main.MikeMannix
+d17 1
+a17 4
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* TWikiUsers has a list of other TWiki users.
+@
+
+
+1.2
+log
+@none
+@
+text
+@d6 1
+a6 1
+	* Heard About: elsewhere online
+d14 1
+a14 1
+		* Set EDITBOXHEIGHT = 17
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 23
+a23 23
+	* Name: Mike Mannix
+	* Email: mike@@gearcore.com
+	* Company Name: 
+	* Company URL: 
+	* Country: USA
+	* Hear From: webtechniques artcl-1st visit thru cgi-resourceindex
+	* Comment: 
+
+
+__Personal Preferences (details in %TWIKIWEB%.TWikiVariables)__
+	* Horizontal size of text edit box:
+		* Set EDITBOXWIDTH = 70
+	* Vertical size of text edit box:
+		* Set EDITBOXHEIGHT = 17
+	* Default state of the __link__ check box in the attach file page:
+		* Set ATTACHLINKBOX = 
+	* Optionally write protect your home page: (set it to your %TWIKIWEB%.WikiName)
+		* Set ALLOWTOPICCHANGE = 
+
+__Related topics__
+	* %TWIKIWEB%.%WIKIPREFSTOPIC% has site-level preferences of %WIKITOOLNAME%.
+	* %WEBPREFSTOPIC% has preferences of the %WIKITOOLNAME%.%WEB% web.
+	* TWikiUsers has a list of other TWiki users.
+@

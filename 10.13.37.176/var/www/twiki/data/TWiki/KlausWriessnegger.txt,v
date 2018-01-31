@@ -1,0 +1,52 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.00.50.27;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.06.20.25.03;	author MikeMannix;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042332627" format="1.0" version="1.2"}%
+%META:TOPICPARENT{name="TWikiHistory"}%
+Klaus Wriessnegger is a TWikiContributor. 
+
+See home page at TWiki:Main/%TOPIC%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="MikeMannix" date="999807903" format="1.0" version="1.1"}%
+d3 1
+a3 1
+KlausWriessnegger is a TWikiContributor. 
+d5 1
+a5 1
+See http://TWiki.org/cgi-bin/view/%MAINWEB%/%TOPIC%
+@

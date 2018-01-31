@@ -1,0 +1,44 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2001.11.24.11.31.26;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.08.19.00.09.58;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1006601486" format="1.0" version="1.2"}%
+%SEARCH{"\.*" scope="topic" regex="on" nosearch="on"}%
+
+See also the faster WebTopicList
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+d3 2
+@

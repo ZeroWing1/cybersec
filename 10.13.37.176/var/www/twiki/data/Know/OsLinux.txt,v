@@ -1,0 +1,47 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2000.08.19.01.16.57;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.07.16.16.24.36;	author thoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@*Operating System: Linux*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsLinux">Search</A></B> all *_Linux_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d6 1
+a6 1
+%INCLUDE{"OperatingSystem.txt"}%
+@

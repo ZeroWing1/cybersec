@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks
+	nobody:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2000.08.19.01.16.31;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.1
+log
+@none
+@
+text
+@*Operating System: Mac OS*
+
+	* <B><A HREF="%SCRIPTURLPATH%/search%SCRIPTSUFFIX%/%WEB%/?scope=text&regex=on&search=%4FperatingSystem.%2AOsMacOS">Search</A></B> all *_Mac OS_* topics.
+	* Is one of the OperatingSystems.
+
+%INCLUDE{"OperatingSystem"}%
+@

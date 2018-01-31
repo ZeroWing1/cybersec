@@ -1,0 +1,46 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.12.02.33.20;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.03.16.08.27.16;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042338800" format="1.0" version="1.2"}%
+Rand Kramer is a TWikiContributor. 
+
+See home page at TWiki:Main/%TOPIC%
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+d4 1
+a4 1
+See http://twiki.org/cgi-bin/view/Main/%TOPIC%
+@

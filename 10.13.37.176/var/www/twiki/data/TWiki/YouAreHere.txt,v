@@ -1,0 +1,55 @@
+head	1.2;
+access;
+symbols;
+locks
+	nobody:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2003.01.19.08.43.45;	author PeterThoeny;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.04.14.05.51.26;	author PeterThoeny;	state Exp;
+branches;
+next	;
+
+
+desc
+@none
+@
+
+
+1.2
+log
+@none
+@
+text
+@%META:TOPICINFO{author="PeterThoeny" date="1042965825" format="1.0" version="1.2"}%
+%STARTINCLUDE%
+	* <span style='background : %VAR{"WEBBGCOLOR" web=%INCLUDINGWEB%}%'>You are currently in the %INCLUDINGWEB% web. The color code for this web is this background, so you know where you are.</span>
+	* If you are not familiar with the %WIKITOOLNAME% collaboration platform, please visit %TWIKIWEB%.WelcomeGuest first.
+%STOPINCLUDE%
+---
+
+	* The description above briefly explains how a background color corresponds to a particular web. It is included within other topics using the following directive: <p />
+	  =%<nop>INCLUDE{"%<nop>TWIKIWEB%.YouAreHere"}%=
+
+	* [[%SCRIPTURL%/search%SCRIPTSUFFIX%/%WEB%?scope=text&amp;web=all&amp;search=%25INCLUDE%7B%22%25TWIKIWEB%25.YouAreHere%22%7D%25&amp;casesensitive=on&amp;nosummary=on&amp;nototal=on][List]] all topics which include this topic.
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="PeterThoeny" date="1018763486" format="1.0" version="1.1"}%
+d3 1
+a3 1
+	* <span style='background : %VAR{"WEBBGCOLOR" web=%INCLUDINGWEB%}%'>You are currently in the %WIKITOOLNAME%.%INCLUDINGWEB% web. The color code for this web is this background, so you know where you are.</span>
+@

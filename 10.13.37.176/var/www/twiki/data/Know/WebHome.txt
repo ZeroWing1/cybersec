@@ -1,0 +1,14 @@
+%META:TOPICINFO{author="PeterThoeny" date="1018765243" format="1.0" version="1.10"}%
+Welcome to the home of <b>%WIKITOOLNAME%.%WEB%</b>. This is a web-based collaboration area used as a knowledge base to find useful information for ... (anything you'd like, this Web is for demonstration purposes only)
+
+---++ Starting Points of the %WEB% Web
+
+	* ReadmeFirst tells you how to use and contribute to the knowlege base.
+	* To *submit a new problem - solution pair* create a new topic like this: Type a new topic name into the edit field at the top of this page, press Enter, and then follow the [Create] link.
+	* WebSearch can be used to *search for a solution to a problem.*
+%INCLUDE{"%TWIKIWEB%.WebSiteTools"}%
+
+*Notes:*
+%INCLUDE{"%TWIKIWEB%.YouAreHere"}%
+
+%INCLUDE{"%TWIKIWEB%.SiteMap"}%
